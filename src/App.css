@@ -4,17 +4,33 @@ body {
 
 .App{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.Footer-Open{
+.Header-Open{
   font-size: 4.5em;
   color: #242424;
   width: 90%;
   margin: auto;
+  border:solid 3px red;
 }
 
-.Footer-Open p{
+.Header-Open p{
   text-align: center
 }
 
+.AboutOpen{
+font-size: 2.5em;
+border:solid 2px green;
+display: grid;
+grid-template-rows: 1fr 1 fr
+}
+
+AboutOpen p{
+  grid-area: 1;
+}
+
+.AboutOpen h1{
+  grid-area: 1;
+  background-color: palevioletred;
+}

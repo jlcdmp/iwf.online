@@ -9,7 +9,7 @@ class Navigation extends Component {
 
 
       <div ClassName='Navigation'>
-        <p>Nav</p>
+        <p>N</p>
       </div>
 
     );
