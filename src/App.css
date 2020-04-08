@@ -5,6 +5,11 @@ body {
 .App{
   display: flex;
   flex-direction: column;
+  border: solid black 2px;
+}
+
+.PageContentStore{
+margin: 0 2em
 }
 
 .Header-Open{
@@ -22,15 +27,118 @@ body {
 .AboutOpen{
 font-size: 2.5em;
 border:solid 2px green;
-display: grid;
-grid-template-rows: 1fr 1 fr
+display: flex;
+flex-direction: row-reverse
 }
 
-AboutOpen p{
-  grid-area: 1;
+.AboutOpen p{
+  text-align: justify;
+  width: 70%;
+  margin:auto;
 }
 
 .AboutOpen h1{
-  grid-area: 1;
-  background-color: palevioletred;
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  margin: auto;
 }
+
+
+.Nav{
+border: dotted pink 3px;
+}
+
+.What{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Services{
+  border: solid 2px blue;
+}
+
+.Services li{
+  background-color: yellow;
+  display: inline-block;
+  margin:5px;
+}
+
+.Services ul{
+  border: solid salmon 1px;
+  margin:0 !important;
+  padding: 0 !important;
+  font-size: 2.5em;
+}
+
+.Services p{
+  font-size: 2em;
+}
+
+.Insta{
+  display: flex;
+   flex-direction: column;
+}
+
+.Insta h1{
+  background-color: #242424;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.Who p{
+  font-size: 2em; 
+  text-align: justify;
+  width: 85%;
+  margin:auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.LogoStore{
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+background-color: #242424;
+color: white;
+border: solid black 1px;
+width: 90%;
+margin:auto auto 20px auto;
+grid-gap: 10px;
+}
+
+
+.Who{
+  border: red solid 2px;
+}
+
+.LogoStore p{
+  text-align: center;
+  margin:0 !important;
+  padding: 5px;
+}
+
+.Footer{
+  background-color: #242424;
+  color: white;
+  font-size: 1.5em;
+  display: flex; 
+  flex-direction: row;
+
+
+}
+
+.Footer ul{
+  list-style: none;
+  padding:5px
+}
+
+.Footer li{
+  padding:10px;
+}
+
+.Footer p{
+  margin:auto;
+}
+

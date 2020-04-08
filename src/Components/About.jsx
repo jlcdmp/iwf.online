@@ -7,7 +7,7 @@ const About = () => {
 
     <div className='AboutOpen'>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat nec mi fringilla aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ex tortor, feugiat ut lobortis nec, efficitur euismod diam. Nullam urna justo, dignissim ut commodo sit amet, imperdiet vitae orci. Nulla sem.
+        Our team at IWF Tiling in Manchester have been working on large and small projects across the North West and the rest of the UK for over 25 years. In that time we have built strong and close working relationships and established a first class reputation with both commercial and domestic clients across the country.
     </p>
 
       <h1>IMG</h1>

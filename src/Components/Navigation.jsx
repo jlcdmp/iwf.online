@@ -8,8 +8,14 @@ class Navigation extends Component {
     return (
 
 
-      <div ClassName='Navigation'>
-        <p>N</p>
+      <div ClassName='Nav'>
+
+<ol>
+  <li>About Us</li>
+  <li>Area</li>
+  <li>Get In touch</li>
+</ol>
+
       </div>
 
     );

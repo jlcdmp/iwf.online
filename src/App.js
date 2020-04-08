@@ -3,17 +3,29 @@ import './App.css';
 import Header from './Components/Header';
 import Navigation from './Components/Navigation';
 import About from './Components/About';
+import What from './Components/What';
+import Who from './Who';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
 
+      <div className='PageContentStore'>
 
-      <Navigation />
+        <Navigation />
 
-      <Header />
+        <Header />
 
-      <About />
+        <About />
+
+        <What />
+
+        <Who />
+      </div>
+
+
+      <Footer />
 
     </div>
 
