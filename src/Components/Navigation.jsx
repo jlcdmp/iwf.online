@@ -10,13 +10,29 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import ClickOutside from './ClickOutside'
 
 class Navigation extends Component {
-  state = {}
+  state = {
+    expanded: null
+  }
 
   render() {
     return (
 
       <>
-        <SideNav onSelect={(selected) => { }} >
+
+
+        <ClickOutside
+          onClickOutside={() => {
+            this.setState({ expanded: false });
+          }}
+        />
+
+
+        <SideNav
+          expanded={this.state.expanded}
+          onToggle={(expanded) => {
+            this.setState({ expanded });
+          }}
+        >
 
           <SideNav.Toggle />
 
@@ -36,37 +52,15 @@ class Navigation extends Component {
 
           </SideNav.Nav>
 
+
+
         </SideNav>
 
 
 
 
 
-        {/* <ClickOutside
-          onClickOutside={() => {
-            this.setState({ expanded: false });
-          }}
-        >
-          <SideNav
-            expanded={this.state.expanded}
-            onToggle={(expanded) => {
-              this.setState({ expanded });
-            }}
-          >
-            <SideNav.Toggle />
-            <SideNav.Nav defaultSelected="home">
-              <NavItem eventKey="home">
-                <NavIcon>
-                  <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
-                </NavIcon>
-                <NavText>
-                  Home
-                </NavText>
-              </NavItem>
-            </SideNav.Nav>
-          </SideNav>
 
-        </ClickOutside> */}
 
       </>
     );
