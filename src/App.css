@@ -12,19 +12,17 @@ body {
   flex-direction: row;
 }
 
-
 .PageContent{
-margin: 0 2em
-
+margin: 0 2em;
+border: dashed red 2px;
 }
-
-
 
 .Header-Open{
   color: #242424;
   height:100vh;
   display: table-cell;
-  vertical-align: middle
+  vertical-align: middle;
+  border: solid 1px blue;
 }
 
 .Header-Open p{
@@ -36,7 +34,9 @@ margin: 0 2em
 .AboutOpen{
 font-size: 2.5em;
 display: flex;
-flex-direction: row-reverse
+flex-direction: row-reverse;
+border: solid 1px blue;
+margin: 1em 0
 }
 
 .AboutOpen p{
@@ -55,21 +55,25 @@ flex-direction: row-reverse
 
 .Nav{
 background-color: #242424;
-color: white
+color: white;
 }
 
 .Nav svg{
-fill: rgb(131, 131, 131);
-margin: 10px;;
+  fill: rgb(131, 131, 131);
+  margin: 10px;
 }
 
 .What{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 2em;
+  border: solid 1px blue;
+
 }
 
 .Services{
+  border: black 0.5px dotted;
+  padding:5px;
 }
 
 .Services li{
@@ -85,11 +89,13 @@ margin: 10px;;
 
 .Services p{
   font-size: 2em;
+  text-align: center;
+  width:90%;
 }
 
 .Socials{
   display: flex;
-   flex-direction: column;
+  flex-direction: column;
 }
 
 .Socials h1{
@@ -101,7 +107,7 @@ margin: 10px;;
 
 .Who p{
   font-size: 2em; 
-  text-align: justify;
+  text-align: center;
   width: 85%;
   margin:auto;
   padding-top: 10px;
@@ -120,14 +126,19 @@ margin:auto auto 20px auto;
 grid-gap: 10px;
 }
 
-
 .Who{
+  margin: 2em 0;
+  border: solid 1px blue
+}
+
+
+.LogoStore{
+  border: red 1px solid ;
+  padding:10px;
 }
 
 .LogoStore p{
   text-align: center;
-  margin:0 !important;
-  padding: 5px;
 }
 
 .Footer{
@@ -135,9 +146,7 @@ grid-gap: 10px;
   color: white;
   font-size: 1.5em;
   display: flex; 
-  flex-direction: row;
-
-
+  flex-direction: row
 }
 
 .Footer ul{

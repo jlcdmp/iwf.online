@@ -4,8 +4,8 @@ import Header from './Components/Header';
 import Navigation from './Components/Navigation';
 import About from './Components/About';
 import What from './Components/What';
-import Who from './Who';
-import Footer from './Footer';
+import Who from './Components/Who';
+import Footer from './Components/Footer';
 
 function App() {
   return (
