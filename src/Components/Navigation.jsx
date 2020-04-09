@@ -1,19 +1,75 @@
 import React, { Component } from 'react';
 import '../App.css'
 
+
+import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+
+
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+
+import ClickOutside from './ClickOutside'
+
 class Navigation extends Component {
   state = {}
 
   render() {
     return (
 
+      <>
 
-      <div className='Nav'>
+        <SideNav
+          onSelect={(selected) => { }}
+        >
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+          <SideNav.Toggle />
 
-      </div>
+          <SideNav.Nav defaultSelected="home">
 
+            <NavItem eventKey="home">
+              <NavIcon>
+                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+              </NavIcon>
+              <NavText>
+                Option 1
+            </NavText>
+            </NavItem>
+
+
+
+          </SideNav.Nav>
+
+        </SideNav>
+
+
+
+        <ClickOutside
+          onClickOutside={() => {
+            this.setState({ expanded: false });
+          }}
+        >
+
+          <SideNav
+            expanded={this.state.expanded}
+            onToggle={(expanded) => {
+              this.setState({ expanded });
+            }}
+          >
+            <SideNav.Toggle />
+            <SideNav.Nav defaultSelected="home">
+              <NavItem eventKey="home">
+                <NavIcon>
+                  <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                </NavIcon>
+                <NavText>
+                  Home
+                </NavText>
+              </NavItem>
+            </SideNav.Nav>
+          </SideNav>
+
+        </ClickOutside>
+
+      </>
     );
   }
 }

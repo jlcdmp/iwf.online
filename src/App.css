@@ -53,15 +53,13 @@ margin: 1em 0
 }
 
 
-.Nav{
-background-color: #242424;
-color: white;
-}
 
-.Nav svg{
-  fill: rgb(131, 131, 131);
-  margin: 10px;
-}
+
+.sidenav---sidenav---_2tBP{
+   background-color: #242424 !important
+ }
+
+
 
 .What{
   display: grid;
