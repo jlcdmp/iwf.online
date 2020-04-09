@@ -16,25 +16,23 @@ class Navigation extends Component {
     return (
 
       <>
-
-        <SideNav
-          onSelect={(selected) => { }}
-        >
+        <SideNav onSelect={(selected) => { }} >
 
           <SideNav.Toggle />
 
           <SideNav.Nav defaultSelected="home">
 
             <NavItem eventKey="home">
+
               <NavIcon>
                 <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
               </NavIcon>
+
               <NavText>
                 Option 1
             </NavText>
+
             </NavItem>
-
-
 
           </SideNav.Nav>
 
@@ -42,12 +40,13 @@ class Navigation extends Component {
 
 
 
-        <ClickOutside
+
+
+        {/* <ClickOutside
           onClickOutside={() => {
             this.setState({ expanded: false });
           }}
         >
-
           <SideNav
             expanded={this.state.expanded}
             onToggle={(expanded) => {
@@ -67,7 +66,7 @@ class Navigation extends Component {
             </SideNav.Nav>
           </SideNav>
 
-        </ClickOutside>
+        </ClickOutside> */}
 
       </>
     );

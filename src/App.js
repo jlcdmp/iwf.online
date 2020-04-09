@@ -9,25 +9,19 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-
     <div className="App">
 
-      <div className='PageContentStore'>
-        <Navigation />
-        <div className='PageContent'>
-          <Header />
-          <About />
-          <What />
-          <Who />
-        </div>
-      </div>
+      <Navigation />
 
-      <div className='FooterStore'>
+      <div className='PageContentStore'>
+        <Header />
+        <About />
+        <What />
+        <Who />
         <Footer />
       </div>
 
     </div>
   );
 }
-
 export default App;

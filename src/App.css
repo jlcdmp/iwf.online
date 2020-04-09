@@ -3,19 +3,23 @@ body {
 }
 
 .App{
- display: flex;
- flex-direction: column;
+display: flex;
+flex-direction: row;
 }
+
+.sidenav---sidenav---_2tBP{
+  background-color: #242424 !important;
+  position: relative !important;
+ }
+
 
 .PageContentStore{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-color: palevioletred;
 }
 
-.PageContent{
-margin: 0 2em;
-border: dashed red 2px;
-}
+
 
 .Header-Open{
   color: #242424;
@@ -24,6 +28,7 @@ border: dashed red 2px;
   vertical-align: middle;
   border: solid 1px blue;
 }
+
 
 .Header-Open p{
   text-align: center;
@@ -51,15 +56,6 @@ margin: 1em 0
   text-align: center;
   margin: auto;
 }
-
-
-
-
-.sidenav---sidenav---_2tBP{
-   background-color: #242424 !important
- }
-
-
 
 .What{
   display: grid;
@@ -129,9 +125,7 @@ grid-gap: 10px;
   border: solid 1px blue
 }
 
-
 .LogoStore{
-  border: red 1px solid ;
   padding:10px;
 }
 
@@ -159,4 +153,3 @@ grid-gap: 10px;
 .Footer p{
   margin:auto;
 }
-
