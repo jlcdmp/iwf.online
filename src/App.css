@@ -3,30 +3,38 @@ body {
 }
 
 .App{
-  display: flex;
-  flex-direction: column;
-  border: solid black 2px;
+ display: flex;
+ flex-direction: column;
 }
 
 .PageContentStore{
-margin: 0 2em
+  display: flex;
+  flex-direction: row;
 }
 
+
+.PageContent{
+margin: 0 2em
+
+}
+
+
+
 .Header-Open{
-  font-size: 4.5em;
   color: #242424;
-  width: 90%;
-  margin: auto;
-  border:solid 3px red;
+  height:100vh;
+  display: table-cell;
+  vertical-align: middle
 }
 
 .Header-Open p{
-  text-align: center
+  text-align: center;
+  font-size: 5em;
 }
+
 
 .AboutOpen{
 font-size: 2.5em;
-border:solid 2px green;
 display: flex;
 flex-direction: row-reverse
 }
@@ -46,26 +54,30 @@ flex-direction: row-reverse
 
 
 .Nav{
-border: dotted pink 3px;
+background-color: #242424;
+color: white
+}
+
+.Nav svg{
+fill: rgb(131, 131, 131);
+margin: 10px;;
 }
 
 .What{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
 }
 
 .Services{
-  border: solid 2px blue;
 }
 
 .Services li{
-  background-color: yellow;
   display: inline-block;
   margin:5px;
 }
 
 .Services ul{
-  border: solid salmon 1px;
   margin:0 !important;
   padding: 0 !important;
   font-size: 2.5em;
@@ -75,12 +87,12 @@ border: dotted pink 3px;
   font-size: 2em;
 }
 
-.Insta{
+.Socials{
   display: flex;
    flex-direction: column;
 }
 
-.Insta h1{
+.Socials h1{
   background-color: #242424;
   color: white;
   margin: auto;
@@ -110,7 +122,6 @@ grid-gap: 10px;
 
 
 .Who{
-  border: red solid 2px;
 }
 
 .LogoStore p{

@@ -36,9 +36,9 @@ class What extends Component {
         </div>
 
 
-        <div className='Insta'>
+        <div className='Socials'>
 
-          <h1>INSTA</h1>
+          <h1>SOCIALS#@</h1>
         </div>
 
 
