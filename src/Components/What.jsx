@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+
+
 class What extends Component {
   state = {}
 
@@ -11,34 +14,40 @@ class What extends Component {
 
         <div className='Services'>
           <ul>
-            <li>∙Bathrooms</li>
-            <li>∙Kicthens</li>
-            <li>∙Ceramic</li>
-            <li>∙Porcelin</li>
-            <li>∙Geometric</li>
-            <li>∙Glass</li>
-            <li>∙Limestone</li>
-            <li>∙Marble</li>
-            <li>∙Mosiac</li>
-            <li>∙Natural Stone</li>
-            <li>∙Domestic</li>
-            <li>∙Comercial</li>
-            <li>∙Municipal</li>
-            <li>∙Swimming Pools</li>
-            <li>∙Show Rooms</li>
-            <li>∙Entrance's</li>
-            <li>∙Office Buildings</li>
-            <li>∙Student Accomodation</li>
+            <li>Bathrooms,</li>
+            <li>Kicthens,</li>
+            <li>Ceramic,</li>
+            <li>Porcelin,</li>
+            <li>Geometric,</li>
+            <li>Glass,</li>
+            <li>Limestone,</li>
+            <li>Marble,</li>
+            <li>Mosiac,</li>
+            <li>Natural Stone,</li>
+            <li>Domestic,</li>
+            <li>Comercial,</li>
+            <li>Municipal,</li>
+            <li>Swimming Pools,</li>
+            <li>Show Rooms,</li>
+            <li>Entrance's,</li>
+            <li>Office Buildings,</li>
+            <li>Student Accomodation</li>
           </ul>
 
-          <p>To Find Out What Were Up To Take A Look At Our Social Media !</p>
+          <p>You Name It, We Can Do It.</p>
 
         </div>
 
 
         <div className='Socials'>
 
-          <h1>SOCIALS#@</h1>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="joeolcrl"
+          />
+
+
+
         </div>
 
 

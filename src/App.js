@@ -14,10 +14,13 @@ function App() {
       <Navigation />
 
       <div className='PageContentStore'>
-        <Header />
-        <About />
-        <What />
-        <Who />
+        <div className='Content'>
+          <p id='topline'>Irlam Wall & Flooring .Ltd</p>
+          <Header />
+          <About />
+          <What />
+          <Who />
+        </div>
         <Footer />
       </div>
 

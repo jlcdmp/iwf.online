@@ -16,9 +16,13 @@ flex-direction: row;
 .PageContentStore{
   display: flex;
   flex-direction: column;
-  background-color: palevioletred;
 }
 
+.Content{
+border: solid red 1px;
+margin: 0 1em;
+padding:5px;
+}
 
 
 .Header-Open{
@@ -27,17 +31,26 @@ flex-direction: row;
   display: table-cell;
   vertical-align: middle;
   border: solid 1px blue;
+  width: 90%;
 }
 
 
+#topline{
+  font-size: 1.5em;
+  margin:auto;
+  color: #4b4b4b;
+}
+
 .Header-Open p{
   text-align: center;
-  font-size: 5em;
+  font-size: 4.5em;
+  font-family: "Din Alternate";
+  color:#ff834a
 }
 
 
 .AboutOpen{
-font-size: 2.5em;
+font-size: 1.9em;
 display: flex;
 flex-direction: row-reverse;
 border: solid 1px blue;
@@ -46,15 +59,26 @@ margin: 1em 0
 
 .AboutOpen p{
   text-align: justify;
-  width: 70%;
   margin:auto;
+  padding-left:10px;
+  padding-right: 5px;
+  
 }
 
 .AboutOpen h1{
-  background-color: #242424;
-  color: white;
+  color: #4b4b4b;
   text-align: center;
-  margin: auto;
+  border: dashed 1px black;
+  font-size: 7em;
+  margin:0 !important;
+  padding: 20px;
+}
+
+.AboutWords h2{
+  color: #ff834a;
+  margin:auto;
+  padding-left:10px;;
+  font-family: 'GT Pressura Trial';
 }
 
 .What{
@@ -68,77 +92,75 @@ margin: 1em 0
 .Services{
   border: black 0.5px dotted;
   padding:5px;
+  width:85%;
 }
 
 .Services li{
   display: inline-block;
-  margin:5px;
+  line-height: 1em;
+  padding-right: .5em;
 }
 
 .Services ul{
   margin:0 !important;
   padding: 0 !important;
-  font-size: 2.5em;
+  font-size: 3em;
+  font-family: "Din Alternate";
+  color:#ff834a
 }
 
 .Services p{
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   width:90%;
+  margin:15px;
 }
 
-.Socials{
+ .Socials{
   display: flex;
   flex-direction: column;
-}
+  background-color: pink;
+ }
+ 
 
-.Socials h1{
-  background-color: #242424;
-  color: white;
-  margin: auto;
-  text-align: center;
-}
-
-.Who p{
-  font-size: 2em; 
-  text-align: center;
-  width: 85%;
-  margin:auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.LogoStore{
-display: grid;
-grid-template-rows: 1fr 1fr;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-background-color: #242424;
-color: white;
-border: solid black 1px;
-width: 90%;
-margin:auto auto 20px auto;
-grid-gap: 10px;
-}
 
 .Who{
   margin: 2em 0;
   border: solid 1px blue
 }
 
-.LogoStore{
-  padding:10px;
+.Who p{
+  font-size: 1.9em; 
+  text-align: justify;
+  width: 85%;
+  margin:auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #4b4b4b
+  
 }
 
+.LogoStore{
+  padding:10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border: solid black 1px;
+  width: 90%;
+  margin:auto auto 20px auto;
+  grid-gap: 10px;
+}
 .LogoStore p{
   text-align: center;
+  color: #242424;
 }
 
 .Footer{
   background-color: #242424;
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex; 
-  flex-direction: row
+  flex-direction: row;
 }
 
 .Footer ul{
@@ -147,7 +169,7 @@ grid-gap: 10px;
 }
 
 .Footer li{
-  padding:10px;
+  padding:5px;
 }
 
 .Footer p{

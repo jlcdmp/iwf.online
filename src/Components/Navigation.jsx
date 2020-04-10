@@ -11,7 +11,6 @@ import ClickOutside from './ClickOutside'
 
 class Navigation extends Component {
   state = {
-    expanded: null
   }
 
   render() {
@@ -24,8 +23,8 @@ class Navigation extends Component {
           onClickOutside={() => {
             this.setState({ expanded: false });
           }}
-        />
-
+        >
+        </ClickOutside>
 
         <SideNav
           expanded={this.state.expanded}
@@ -39,20 +38,24 @@ class Navigation extends Component {
           <SideNav.Nav defaultSelected="home">
 
             <NavItem eventKey="home">
-
               <NavIcon>
-                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                <i className="fa fa-fw fa-home" style={{ fontSize: '3em' }} />
               </NavIcon>
-
               <NavText>
                 Option 1
             </NavText>
+            </NavItem>
 
+            <NavItem >
+              <NavIcon>
+                <i style={{ fontSize: '3em' }} />
+              </NavIcon>
+              <NavText>
+                Option 2
+            </NavText>
             </NavItem>
 
           </SideNav.Nav>
-
-
 
         </SideNav>
 
