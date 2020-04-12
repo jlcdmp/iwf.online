@@ -9,9 +9,22 @@ flex-direction: row;
 
 .sidenav---sidenav---_2tBP{
   background-color: #242424 !important;
-  position: relative !important;
+  position: sticky !important;
+  left: 0 !important
+}
+
+
+ .sidenav---sidenav-toggle---1KRjR{
+   border:dashed 0.5px red !important;
+   position: sticky !important;
+   top:0 !important;
  }
 
+ .sidenav---sidenav-nav---3tvij{
+  border:dashed 0.5px blue !important;
+  position: sticky !important;
+  top:4em
+ }
 
 .PageContentStore{
   display: flex;
@@ -48,11 +61,6 @@ padding:5px;
   color:#ff834a
 }
 
-
-
-
-
-
 .AboutOpen{
 font-size: 1.9em;
 display: flex;
@@ -66,7 +74,6 @@ margin: 1em 0
   margin:auto;
   padding-left:10px;
   padding-right: 5px;
-  
 }
 
 .AboutOpen h1{
@@ -131,9 +138,7 @@ margin: 1em 0
   margin:auto;
   margin-bottom: 1em;
   border: dotted black 1px;
-
 }
-
 
 #promise{
   text-align: center;
@@ -142,8 +147,6 @@ margin: 1em 0
   color: #242424;
   margin-top:1.5em;
 }
-
-
 
 .twitter-follow-button-rendered{
   border:solid 1px blue !important;
@@ -169,8 +172,8 @@ margin: 1em 0
   margin:auto;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: #4b4b4b
-  
+  color: #4b4b4b;
+  border: dotted black 1px;
 }
 
 .LogoStore{

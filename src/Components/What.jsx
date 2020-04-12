@@ -52,10 +52,10 @@ class What extends Component {
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="iwftiling"
+                noFooter={true}
                 options={{
                   tweetLimit: "3",
                 }}
-                noFooter="true"
               ></TwitterTimelineEmbed>
             </div>
           </section>
