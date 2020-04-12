@@ -86,13 +86,12 @@ margin: 1em 0
   grid-template-columns: 1fr 1fr;
   margin-top: 2em;
   border: solid 1px blue;
-
+  padding:5px;
 }
 
 .Services{
   border: black 0.5px dotted;
-  padding:5px;
-  width:85%;
+  width:95%;
 }
 
 .Services li{
@@ -104,44 +103,43 @@ margin: 1em 0
 .Services ul{
   margin:0 !important;
   padding: 0 !important;
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: "Din Alternate";
-  color:#ff834a
+  color:#ff834a;
 }
 
 .Services p{
-  font-size: 2.5em;
-  text-align: center;
-  width:90%;
+  font-size: 3em;
+  text-align: justify;
   margin:15px;
+  font-family: "Din Alternate";
+  color: #242424
 }
 
  .Socials{
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  margin: 2em; 
  }
 
- .twitterContainer{
-   padding:5px;
- }
+.Socials p{
+  text-align: center;
+  font-size: 1.8em;
+  margin:auto;
+  margin-bottom: 1em;
+    border: dotted black 1px;
 
-#twitter-widget-0{
-  border: solid 1px red;
-  padding: 1px;
-  width: 300px !important;
-  height: 30px !important;
+}
+
+
+
+
+.twitter-follow-button-rendered{
+  border:solid 1px blue !important;
 }
  
-
-#widget{
-  background-color: red !important
+#follow-button{
+  border:solid 1px black !important
 }
-
-
-
-
 
 .twitter-embed{
   border: solid blue 1px;
@@ -173,6 +171,7 @@ margin: 1em 0
   margin:auto auto 20px auto;
   grid-gap: 10px;
 }
+
 .LogoStore p{
   text-align: center;
   color: #242424;

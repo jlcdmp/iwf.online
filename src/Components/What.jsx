@@ -33,25 +33,32 @@ class What extends Component {
 
         <div className='Socials'>
 
+
+
+          <p>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
+
+
           <section className="twitterContainer">
+
 
             <TwitterFollowButton
               screenName={'iwftiling'}
             />
+
 
             <div className="twitter-embed">
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="iwftiling"
                 options={{
-                  tweetLimit: "3",
+                  tweetLimit: "2",
                 }}
                 noFooter="true"
               ></TwitterTimelineEmbed>
             </div>
           </section>
-        </div>
-      </div>
+        </div >
+      </div >
     );
   }
 
