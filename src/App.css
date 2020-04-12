@@ -8,25 +8,22 @@ flex-direction: row;
 }
 
 .sidenav---sidenav---_2tBP{
-  background-color: #242424 !important;
-  position: sticky !important;
-  left: 0 !important
+background-color: #242424 !important;
 }
 
 
- .sidenav---sidenav-toggle---1KRjR{
-   border:dashed 0.5px red !important;
-   position: sticky !important;
-   top:0 !important;
- }
-
- .sidenav---sidenav-nav---3tvij{
-  border:dashed 0.5px blue !important;
-  position: sticky !important;
-  top:4em
- }
+.sidenav---navtext---1AE_f{
+  color: white !important;
+    font-size: 1.5em;
+}
 
 .PageContentStore{
+  position: fixed;
+  left:3em;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -198,6 +195,7 @@ margin: 1em 0
   font-size: 1em;
   display: flex; 
   flex-direction: row;
+  margin-left: 0.5em !important
 }
 
 .Footer ul{
