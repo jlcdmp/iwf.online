@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
-
+import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
 
 class What extends Component {
   state = {}
-
   render() {
     return (
-
       <div className='What'>
-
 
         <div className='Services'>
           <ul>
@@ -33,29 +28,35 @@ class What extends Component {
             <li>Office Buildings,</li>
             <li>Student Accomodation</li>
           </ul>
-
           <p>You Name It, We Can Do It.</p>
-
         </div>
-
 
         <div className='Socials'>
 
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="joeolcrl"
-          />
+          <section className="twitterContainer">
 
+            <TwitterFollowButton
+              screenName={'iwftiling'}
+            />
 
-
+            <div className="twitter-embed">
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="iwftiling"
+                options={{
+                  tweetLimit: "3",
+                }}
+                noFooter="true"
+              ></TwitterTimelineEmbed>
+            </div>
+          </section>
         </div>
-
-
-
-
       </div>
     );
   }
-}
 
+
+
+
+}
 export default What;

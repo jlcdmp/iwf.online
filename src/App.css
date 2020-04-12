@@ -119,10 +119,33 @@ margin: 1em 0
  .Socials{
   display: flex;
   flex-direction: column;
-  background-color: pink;
+  padding: 5px;
+  margin: 2em; 
  }
+
+ .twitterContainer{
+   padding:5px;
+ }
+
+#twitter-widget-0{
+  border: solid 1px red;
+  padding: 1px;
+  width: 300px !important;
+  height: 30px !important;
+}
  
 
+#widget{
+  background-color: red !important
+}
+
+
+
+
+
+.twitter-embed{
+  border: solid blue 1px;
+}
 
 .Who{
   margin: 2em 0;
