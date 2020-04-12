@@ -18,11 +18,13 @@ function App() {
           <p id='topline'>Irlam Wall & Flooring .Ltd</p>
           <Header />
           <About />
-          <What />
+          <What ref={props.ref} />
           <Who />
         </div>
         <Footer />
       </div>
+
+      {console.log()}
 
     </div>
   );

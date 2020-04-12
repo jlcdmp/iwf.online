@@ -1,5 +1,7 @@
 body {
-  font-family: 'ZillaSlab-medium', sans-serif
+  font-family: 'ZillaSlab-medium', sans-serif;
+  scroll-behavior: smooth;
+
 }
 
 .App{
@@ -29,9 +31,10 @@ background-color: #242424 !important;
 }
 
 .Content{
-border: solid red 1px;
-margin: 0 1em;
-padding:5px;
+  position: relative;
+  border: solid red 1px;
+  margin: 0 1em;
+  padding:5px;
 }
 
 
