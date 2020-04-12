@@ -29,11 +29,13 @@ class What extends Component {
             <li>Student Accomodation</li>
           </ul>
           <p>You Name It, We Can Do It.</p>
+
+
+          <p id='promise'>Not only do we provide the highest quality workmanship, our outstanding customer service and reliability sets us apart from the competition. What’s more, all of our work is guaranteed.</p>
+
         </div>
 
         <div className='Socials'>
-
-
 
           <p>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
 
@@ -51,7 +53,7 @@ class What extends Component {
                 sourceType="profile"
                 screenName="iwftiling"
                 options={{
-                  tweetLimit: "2",
+                  tweetLimit: "3",
                 }}
                 noFooter="true"
               ></TwitterTimelineEmbed>
