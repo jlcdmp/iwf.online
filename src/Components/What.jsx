@@ -4,18 +4,14 @@ import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
 class What extends Component {
   state = {}
 
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
-
-
   render() {
     return (
-      <div className='What'>
 
-        <div className='Services' ref={this.myRef}>
-          {console.log(this.myRef)}
+      <div className='What' ref={this.props.ref}
+        id='test'
+      >
+
+        <div className='Services' >
           <ul>
             <li>Bathrooms,</li>
             <li>Kicthens,</li>

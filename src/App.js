@@ -1,32 +1,68 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header';
-import Navigation from './Components/Navigation';
+import Nav from './Components/Nav';
 import About from './Components/About';
 import What from './Components/What';
 import Who from './Components/Who';
 import Footer from './Components/Footer';
 
-function App() {
-  return (
-    <div className="App">
+import scrollToComponent from 'react-scroll-to-component';
 
-      <Navigation />
 
-      <div className='PageContentStore'>
-        <div className='Content'>
-          <p id='topline'>Irlam Wall & Flooring .Ltd</p>
-          <Header />
-          <About />
-          <What ref={props.ref} />
-          <Who />
+class App extends Component {
+
+
+
+  myRef = React.createRef()
+
+
+
+  render() {
+    return (
+
+      <div className="App">
+
+        <Nav handleClick={this.handleClick} />
+
+        <div className='PageContentStore'>
+          <div className='Content'>
+            <p id='topline'>Irlam Wall & Flooring .Ltd</p>
+            <Header />
+            <About />
+            <What ref={this.myRef} />
+            <Who />
+          </div>
+
+          <Footer />
         </div>
-        <Footer />
+
+
+
       </div>
+    );
+  }
 
-      {console.log()}
 
-    </div>
-  );
+
+
+  handleClick = event => {
+
+    console.log()
+
+    // this.myRef.current.scrollIntoView({
+    //   behaivour: 'smooth',
+    //   block: 'end'
+    // })
+
+    const anchor = document.querySelector('#test')
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+    // scrollToComponent(this.myRef.current)
+
+  }
+
+
+
 }
 export default App;
