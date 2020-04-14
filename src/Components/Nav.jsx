@@ -45,14 +45,30 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-            <NavItem eventKey='contact'>
+
+
+
+            <NavItem eventKey='area'>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
               <NavText>
-                Contact Us
+                News
             </NavText>
             </NavItem>
+
+
+            <NavItem eventKey='contact'>
+              <NavIcon>
+                <i style={{ fontSize: '3em' }} />
+              </NavIcon>
+              <NavText id='nav-contact'>
+                Get In Touch
+            </NavText>
+            </NavItem>
+
+
+
           </SideNav.Nav>
         </SideNav>
       </ClickOutside>

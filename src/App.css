@@ -16,8 +16,16 @@ background-color: #242424 !important;
 
 .sidenav---navtext---1AE_f{
   color: white !important;
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
+
+
+#nav-contact{
+  color:#ff834a !important;
+  text-decoration: underline
+}
+
+
 
 .PageContentStore{
   position: fixed;
@@ -62,25 +70,26 @@ background-color: #242424 !important;
 }
 
 .AboutOpen{
-font-size: 1.9em;
+font-size: 1em;
 display: flex;
 flex-direction: row-reverse;
 border: solid 1px blue;
-margin: 1em 0
+margin: 1em 
 }
 
 .AboutOpen p{
   text-align: justify;
   margin:auto;
-  padding-left:10px;
+  padding-left:30px;
   padding-right: 5px;
+  font-size: 25px
 }
 
 .AboutOpen h1{
   color: #4b4b4b;
   text-align: center;
   border: dashed 1px black;
-  font-size: 7em;
+  font-size: 200px;
   margin:0 !important;
   padding: 20px;
 }
@@ -88,8 +97,9 @@ margin: 1em 0
 .AboutWords h2{
   color: #ff834a;
   margin:auto;
-  padding-left:10px;;
+  padding-left:30px;;
   font-family: 'GT Pressura Trial';
+  font-size: 2.5em
 }
 
 .What{
@@ -130,14 +140,17 @@ margin: 1em 0
  .Socials{
   display: flex;
   flex-direction: column;
+  border: solid red 1px;
+  padding: 5px;
+  align-items: center;
  }
 
 .Socials p{
-  text-align: center;
-  font-size: 1.8em;
-  margin:auto;
-  margin-bottom: 1em;
+  text-align: justify;
+  font-size: 1.5em;
+  margin: 0.5em auto;
   border: dotted black 1px;
+  width:80%
 }
 
 #promise{
@@ -150,14 +163,16 @@ margin: 1em 0
 
 .twitter-follow-button-rendered{
   border:solid 1px blue !important;
+  padding:5px !important;
 }
  
-#follow-button{
-  border:solid 1px black !important
-}
+
 
 .twitter-embed{
   border: solid blue 1px;
+  overflow: scroll;
+  height:60em;
+  width:30em
 }
 
 .Who{
