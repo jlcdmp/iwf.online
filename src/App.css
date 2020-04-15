@@ -66,7 +66,7 @@ background-color: #242424 !important;
   text-align: center;
   font-size: 4.5em;
   font-family: "Din Alternate";
-  color:#ff834a
+  color:#242424
 }
 
 .AboutOpen{
@@ -79,10 +79,9 @@ margin: 1em
 
 .AboutOpen p{
   text-align: justify;
+  font-size: 25px;
+  padding: 10px;
   margin:auto;
-  padding-left:30px;
-  padding-right: 5px;
-  font-size: 25px
 }
 
 .AboutOpen h1{
@@ -94,47 +93,70 @@ margin: 1em
   padding: 20px;
 }
 
-.AboutWords h2{
-  color: #ff834a;
-  margin:auto;
-  padding-left:30px;;
-  font-family: 'GT Pressura Trial';
-  font-size: 2.5em
+.Page-Heading{
+  color: #8d8d8d;
+  font-family: 'Manrope';
+  font-size: 2.2em;
+  font-weight: 750;
+  text-align: left;
+  margin:5px;
+}
+
+
+
+.What h2{
+  grid-area: 1/1;
+  text-align: right !important;
+  line-height: 1em;
 }
 
 .What{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.5fr 9.5fr;
   margin-top: 2em;
   border: solid 1px blue;
   padding:5px;
 }
 
 .Services{
-  border: black 0.5px dotted;
-  width:95%;
+  display: flex;
+  flex-direction: column;
+  grid-area: 2/1
 }
 
 .Services li{
+  color:#ff834a;
   display: inline-block;
-  line-height: 1em;
-  padding-right: .5em;
+  margin: 1px 2px 1px 5px;
+  line-height: 1.1em
 }
 
 .Services ul{
-  margin:0 !important;
-  padding: 0 !important;
-  font-size: 3.5em;
-  font-family: "Din Alternate";
-  color:#ff834a;
+  font-size: 3.7em;
+  font-family: "Manrope";
+  font-weight: bold;
+  list-style-type: disc ;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  line-height: 1.1em
 }
 
 .Services p{
   font-size: 3em;
-  text-align: justify;
+  text-align: center;
   margin:15px;
-  font-family: "Din Alternate";
-  color: #242424
+  font-family: "Manrope";
+  font-weight: 600;
+  color: #353535
+}
+
+#promise{
+  text-align: justify;
+  font-size: 2em;
+  font-family: "ZillaSlab-Medium", sans-serif;
+  color: #242424;
+  width:90%;
 }
 
  .Socials{
@@ -143,41 +165,33 @@ margin: 1em
   border: solid red 1px;
   padding: 5px;
   align-items: center;
+  grid-area: 2/2
  }
 
 .Socials p{
   text-align: justify;
   font-size: 1.5em;
   margin: 0.5em auto;
-  border: dotted black 1px;
-  width:80%
 }
 
-#promise{
-  text-align: center;
-  font-size: 2em;
-  font-family: "ZillaSlab-Medium", sans-serif;
-  color: #242424;
-  margin-top:1.5em;
-}
+
 
 .twitter-follow-button-rendered{
-  border:solid 1px blue !important;
   padding:5px !important;
 }
  
 
 
 .twitter-embed{
-  border: solid blue 1px;
   overflow: scroll;
-  height:60em;
+  height:50em;
   width:30em
 }
 
 .Who{
   margin: 2em 0;
-  border: solid 1px blue
+  border: solid 1px blue;
+  padding:5px
 }
 
 .Who p{

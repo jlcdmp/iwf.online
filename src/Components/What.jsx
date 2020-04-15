@@ -11,26 +11,29 @@ class What extends Component {
         id='test'
       >
 
+
+        <h2 className='Page-Heading'>What We Do Best.</h2>
+
         <div className='Services' >
           <ul>
-            <li>Bathrooms,</li>
-            <li>Kicthens,</li>
-            <li>Ceramic,</li>
-            <li>Porcelin,</li>
-            <li>Geometric,</li>
-            <li>Glass,</li>
-            <li>Limestone,</li>
-            <li>Marble,</li>
-            <li>Mosiac,</li>
-            <li>Natural Stone,</li>
-            <li>Domestic,</li>
-            <li>Comercial,</li>
-            <li>Municipal,</li>
-            <li>Swimming Pools,</li>
-            <li>Show Rooms,</li>
-            <li>Entrance's,</li>
-            <li>Office Buildings,</li>
-            <li>Student Accomodation</li>
+            <li>•Bathrooms</li>
+            <li>•Kicthens</li>
+            <li>Ceramic </li>
+            <li>•Porcelin</li>
+            <li>Geometric</li>
+            <li>•Glass</li>
+            <li>Limestone</li>
+            <li>•Marble</li>
+            <li>•Mosiac</li>
+            <li>•Natural Stone</li>
+            <li>Domestic</li>
+            <li>•Comercial</li>
+            <li>Municipal</li>
+            <li>Swimming Pool</li>
+            <li>Show Rooms</li>
+            <li>•Entrance's</li>
+            <li>Office's</li>
+            <li>•Student Hall's</li>
           </ul>
           <p>You Name It, We Can Do It.</p>
 
@@ -40,18 +43,11 @@ class What extends Component {
         </div>
 
         <div className='Socials'>
-
           <p>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
-
-
           <section className="twitterContainer">
-
-
             <TwitterFollowButton
               screenName={'iwftiling'}
             />
-
-
             <div className="twitter-embed">
               <TwitterTimelineEmbed
                 sourceType="profile"
@@ -64,6 +60,7 @@ class What extends Component {
             </div>
           </section>
         </div >
+
       </div >
     );
   }
