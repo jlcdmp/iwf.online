@@ -8,6 +8,8 @@ import Who from './Components/Who';
 import Footer from './Components/Footer';
 
 import scrollToComponent from 'react-scroll-to-component';
+import Break from './Components/PageBreak';
+import Social from './Social';
 
 
 class App extends Component {
@@ -31,6 +33,8 @@ class App extends Component {
             <Header />
             <About />
             <What ref={this.myRef} />
+            <Break />
+            <Social />
             <Who />
           </div>
 

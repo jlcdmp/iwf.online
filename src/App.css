@@ -13,19 +13,15 @@ flex-direction: row;
 background-color: #242424 !important;
 }
 
-
 .sidenav---navtext---1AE_f{
   color: white !important;
   font-size: 1.5em;
 }
 
-
 #nav-contact{
   color:#ff834a !important;
   text-decoration: underline
 }
-
-
 
 .PageContentStore{
   position: fixed;
@@ -45,28 +41,27 @@ background-color: #242424 !important;
   padding:5px;
 }
 
-
 .Header-Open{
   color: #242424;
-  height:100vh;
+  height:92vh;
   display: table-cell;
   vertical-align: middle;
   border: solid 1px blue;
   width: 90%;
 }
 
-
 #topline{
   font-size: 1.5em;
   margin:auto;
-  color: #4b4b4b;
+  color: #9e9e9e;
 }
 
 .Header-Open p{
   text-align: center;
   font-size: 4.5em;
-  font-family: "Din Alternate";
-  color:#242424
+  font-family: "Manrope";
+  font-weight: 700;
+  color:#505050
 }
 
 .AboutOpen{
@@ -79,7 +74,7 @@ margin: 1em
 
 .AboutOpen p{
   text-align: justify;
-  font-size: 25px;
+  font-size: 1.5em;
   padding: 10px;
   margin:auto;
 }
@@ -102,90 +97,181 @@ margin: 1em
   margin:5px;
 }
 
-
-
-.What h2{
-  grid-area: 1/1;
-  text-align: right !important;
-  line-height: 1em;
-}
-
 .What{
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  grid-template-rows: 0.5fr 9.5fr;
   margin-top: 2em;
   border: solid 1px blue;
   padding:5px;
+  display: flex;
+  flex-direction: row;
 }
 
 .Services{
-  display: flex;
-  flex-direction: column;
-  grid-area: 2/1
+  margin-left: 1em
+}
+
+.Services ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 40em;
+  border: solid 1px black
 }
 
 .Services li{
-  color:#ff834a;
-  display: inline-block;
-  margin: 1px 2px 1px 5px;
-  line-height: 1.1em
+  font-family: 'Manrope',sans-serif;
+  font-weight: 650;
+  font-size: 3.3em;
+  line-height: 1.1em;
+  display: inline-block
 }
 
-.Services ul{
-  font-size: 3.7em;
-  font-family: "Manrope";
-  font-weight: bold;
-  list-style-type: disc ;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  line-height: 1.1em
+.What-Words{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
 }
 
-.Services p{
-  font-size: 3em;
-  text-align: center;
-  margin:15px;
-  font-family: "Manrope";
-  font-weight: 600;
-  color: #353535
+.What-Words p{
+  font-family: 'Manrope' , sans-serif;
+  font-weight: 550;
+  font-size: 2.5em;
+  color: #242424;
+  margin: auto
 }
 
 #promise{
-  text-align: justify;
   font-size: 2em;
-  font-family: "ZillaSlab-Medium", sans-serif;
-  color: #242424;
-  width:90%;
+  font-family: 'ZillaSlab-regular';
+  text-align: center;
+  border:solid 1px black;
+  padding:10px;
+  width:85%;
+  margin:auto;
 }
 
  .Socials{
-  display: flex;
-  flex-direction: column;
-  border: solid red 1px;
-  padding: 5px;
-  align-items: center;
-  grid-area: 2/2
+border:solid 1px blue; 
+padding: 5px;
+margin-top: 2em;
+display:flex;
+flex-direction: row;
  }
 
-.Socials p{
-  text-align: justify;
-  font-size: 1.5em;
-  margin: 0.5em auto;
+
+
+ #topper{
+   font-size: 1.8em;
+   margin-bottom: 1em;
+   text-align:justify;
+   width:97%;
+ }
+
+
+
+.Reviews{
+  padding: 10px;
+  width:90%;
+  border:solid 1px black;
+  margin:auto;
+  margin-right:1em;
+}
+
+.Reviews p{
+  font-size: 2.2em;
+  margin:auto;
 }
 
 
+.Review-Container{
+  list-style:none;
+  border-left: solid 2px #ff834a;
+  padding: 0 0 10px 10px;
+}
+
+.Review{
+  font-size: 1.5em;
+  text-align: justify;
+  font-family: 'ZillaSlab-regular'
+}
+
+.Reviewer{
+  font-size:1.3em;
+  text-align: right;
+  line-height:1em
+}
+
+.twitterContainer{
+  border: solid 1px black;
+  padding:5px;
+  width:80%;
+}
 
 .twitter-follow-button-rendered{
   padding:5px !important;
 }
- 
-
 
 .twitter-embed{
   overflow: scroll;
-  height:50em;
-  width:30em
+  height:62em;
+  width:35em;
+}
+
+.Mini-Contact{
+  padding:5px;
+  width: 90%;
+}
+
+.Item-Container{
+  max-width: 200px;
+  margin-left:1em; 
+}
+
+.Contact-Item{
+display: grid;
+grid-template-rows: 0.5fr 0.5fr;
+max-width: 200px;
+margin-bottom: 10px;
+}
+
+#touch{
+  font-size: 2.2em;;
+  font-family: 'Manrope';
+  font-weight: 600;
+}
+
+#touch-info{
+  font-size: 1.5em;
+  font-family: 'ZillaSlab-regular';
+  margin-bottom: 0.5em;
+}
+
+#title{
+grid-area: 1/1;
+display: grid;
+grid-template-columns: 1fr 3fr;
+margin: 0 auto 0 0;
+}
+
+#title svg{
+height:25px;
+width:25px;
+margin:auto;
+}
+
+#title p{
+  text-align: center;
+  font-size: 1.5em;
+  margin:3px;
+  font-family: 'Manrope';
+  font-weight: 600;
+}
+
+.Contact-Item span{
+  font-size: 1.5em;
+  text-align: center;
+  margin:0 auto auto 0;
+  font-family: 'Manrope';
+
 }
 
 .Who{
@@ -197,28 +283,26 @@ margin: 1em
 .Who p{
   font-size: 1.9em; 
   text-align: justify;
-  width: 85%;
+  width: 80%;
   margin:auto;
-  padding-top: 10px;
   padding-bottom: 20px;
   color: #4b4b4b;
-  border: dotted black 1px;
 }
 
 .LogoStore{
-  padding:10px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   border: solid black 1px;
   width: 90%;
-  margin:auto auto 20px auto;
-  grid-gap: 10px;
+  margin:auto
 }
 
-.LogoStore p{
-  text-align: center;
-  color: #242424;
+.LogoStore span{
+  border-right: dashed 1px black;
+  border-bottom: dashed 1px black;
+  font-size: 3em;
+  text-align: center
 }
 
 .Footer{
@@ -241,4 +325,23 @@ margin: 1em
 
 .Footer p{
   margin:auto;
+}
+
+.Page-Break{
+  padding:10px;
+  background-color: aliceblue;
+  margin: 2em -2em 0 -2em
+}
+
+.Page-Break p{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700; 
+  font-size:2.5em;
+  text-align: center;
+  width:85%;
+  margin:auto;
+}
+
+#splash{
+  color: #ff834a
 }

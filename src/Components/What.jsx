@@ -1,73 +1,46 @@
 import React, { Component } from 'react';
-import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
-
 class What extends Component {
   state = {}
-
   render() {
     return (
-
-      <div className='What' ref={this.props.ref}
-        id='test'
-      >
-
-
-        <h2 className='Page-Heading'>What We Do Best.</h2>
+      <div className='What' ref={this.props.ref} id='test'>
 
         <div className='Services' >
+
+
           <ul>
-            <li>•Bathrooms</li>
-            <li>•Kicthens</li>
-            <li>Ceramic </li>
-            <li>•Porcelin</li>
-            <li>Geometric</li>
+            <li>Bathrooms</li>
+            <li>•Kitchens •</li>
+            <li>Entrance's</li>
+            <li>•Showroom's</li>
+            <li>Swimming Pool's</li>
             <li>•Glass</li>
-            <li>Limestone</li>
-            <li>•Marble</li>
+            <li>Office Building's</li>
             <li>•Mosiac</li>
-            <li>•Natural Stone</li>
-            <li>Domestic</li>
-            <li>•Comercial</li>
+            <li>Student Accomodation's</li>
+            <li>Comercial</li>
+            <li>•Domestic •</li>
             <li>Municipal</li>
-            <li>Swimming Pool</li>
-            <li>Show Rooms</li>
-            <li>•Entrance's</li>
-            <li>Office's</li>
-            <li>•Student Hall's</li>
+            <li>•Limestone •</li>
+            <li>Natural Stone</li>
+            <li>•Ceramic</li>
+            <li>Porcelin •</li>
+
           </ul>
-          <p>You Name It, We Can Do It.</p>
-
-
-          <p id='promise'>Not only do we provide the highest quality workmanship, our outstanding customer service and reliability sets us apart from the competition. What’s more, all of our work is guaranteed.</p>
 
         </div>
 
-        <div className='Socials'>
-          <p>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
-          <section className="twitterContainer">
-            <TwitterFollowButton
-              screenName={'iwftiling'}
-            />
-            <div className="twitter-embed">
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="iwftiling"
-                noFooter={true}
-                options={{
-                  tweetLimit: "3",
-                }}
-              ></TwitterTimelineEmbed>
-            </div>
-          </section>
-        </div >
+        <div className='What-Words'>
+          <p>You Name It, We Can Do It.</p>
+          <span id='promise'>Not only do we provide the highest quality workmanship, our outstanding customer service and reliability sets us apart from the competition.
+          <br />
+            <br />What’s more, all of our work is guaranteed.
+          <br />
+            <br />In addition, you deal with one person from the beginning of the project to the end because we do not sub-contract any of our work.</span>
+        </div>
 
       </div >
     );
   }
-
-
-
-
-
 }
 export default What;
