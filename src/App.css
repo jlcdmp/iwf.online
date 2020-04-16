@@ -219,6 +219,14 @@ flex-direction: row;
 .Mini-Contact{
   padding:5px;
   width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin:auto auto auto 0;
+}
+
+.Contact-Words{
+  border-right:solid 1px grey;
+  padding-right: 1em;;
 }
 
 .Item-Container{
@@ -233,6 +241,7 @@ max-width: 200px;
 margin-bottom: 10px;
 }
 
+
 #touch{
   font-size: 2.2em;;
   font-family: 'Manrope';
@@ -240,10 +249,11 @@ margin-bottom: 10px;
 }
 
 #touch-info{
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: 'ZillaSlab-regular';
-  margin-bottom: 0.5em;
+  text-align: justify
 }
+
 
 #title{
 grid-area: 1/1;

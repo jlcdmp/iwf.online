@@ -20,8 +20,11 @@ const Social = () => {
           <li className='Reviewer'>- Sandy Cheeks</li>
         </ul>
         <div className='Mini-Contact'>
-          <p id='touch'>Get in touch today </p>
-          <p id='touch-info'>If you are seeking expert, affordable tiling services for your commercial or domestic property, then contact us today:</p>
+          <div className='Contact-Words'>
+            <p id='touch'>Get in touch today </p>
+            <p id='touch-info'>If you are seeking expert, affordable tiling services for your commercial or domestic property, then contact us today.</p>
+
+          </div>
 
 
 
