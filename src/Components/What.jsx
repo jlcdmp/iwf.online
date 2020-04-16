@@ -32,11 +32,17 @@ class What extends Component {
 
         <div className='What-Words'>
           <p>You Name It, We Can Do It.</p>
-          <span id='promise'>Not only do we provide the highest quality workmanship, our outstanding customer service and reliability sets us apart from the competition.
+          <span id='promise'>
+            Firstly, all of our work is carried out to British Standards. We are fully qualified to NVQ Level 2, proud members of the Tile Association and CSCS registered.
           <br />
-            <br />What’s more, all of our work is guaranteed.
+            <br />
+            Not only do we provide the highest quality workmanship, our outstanding customer service and reliability sets us apart from the competition.
           <br />
-            <br />In addition, you deal with one person from the beginning of the project to the end because we do not sub-contract any of our work.</span>
+            <br />
+            In addition, you deal with one person from the beginning of the project to the end because we do not sub-contract any of our work.
+          <br />
+            <br />Most of all, our work is guaranteed. And that's a promise.
+          </span>
         </div>
 
       </div >

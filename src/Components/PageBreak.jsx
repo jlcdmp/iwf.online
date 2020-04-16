@@ -9,7 +9,7 @@ const Break = () => {
 </p>
       <br />
       <p id='splash'>
-        Need Manchester Tilers ? then do not hesitate to contact us for a free quotation.</p>
+        Need Manchester Tilers ? then do not hesitate to <a href='contact'>contact us</a> for a free quotation.</p>
 
     </div>
   );

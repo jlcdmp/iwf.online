@@ -8,8 +8,9 @@ import Who from './Components/Who';
 import Footer from './Components/Footer';
 
 import scrollToComponent from 'react-scroll-to-component';
+
 import Break from './Components/PageBreak';
-import Social from './Social';
+import Social from './Components/Social';
 
 
 class App extends Component {
