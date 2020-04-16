@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
 
-const Social = () => {
+const Social = (props) => {
+
+
   return (
-    <div className='Socials'>
+    <div className='Socials' ref={props.props} >
       <div className='Reviews'>
         <p id='topper'>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
         <p>What our customers say..</p>

@@ -3,21 +3,17 @@ import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import ClickOutside from './ClickOutside'
 
-
-
-
 class Nav extends Component {
   state = {}
 
-
   render() {
     return (
-
       <ClickOutside
         onClickOutside={() => {
           this.setState({ expanded: false });
         }}
       >
+
         <SideNav
           expanded={this.state.expanded}
           onToggle={(expanded) => {
@@ -25,8 +21,10 @@ class Nav extends Component {
           }}>
 
           <SideNav.Toggle />
+
           <SideNav.Nav defaultSelected="home" >
-            <NavItem eventKey="home"  >
+
+            <NavItem eventKey="home" >
               <NavIcon>
                 <i className="fa fa-fw fa-home" style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -35,18 +33,14 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-            <NavItem eventKey='services' onClick={this.props.handleClick}>
-
+            <NavItem eventKey='services' onClick={this.props.handleClick} >
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
-              <NavText>
+              <NavText >
                 Our Services
             </NavText>
             </NavItem>
-
-
-
 
             <NavItem eventKey='area'>
               <NavIcon>
@@ -57,8 +51,7 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-
-            <NavItem eventKey='contact'>
+            <NavItem eventKey='contact' onClick={this.props.handleClick}>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -66,9 +59,6 @@ class Nav extends Component {
                 Get In Touch
             </NavText>
             </NavItem>
-
-
-
           </SideNav.Nav>
         </SideNav>
       </ClickOutside>

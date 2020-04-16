@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+
 class What extends Component {
-  state = {}
+  state = {
+  }
+
+
+
   render() {
+
     return (
-      <div className='What' ref={this.props.ref} id='test'>
 
-        <div className='Services' >
-
-
+      < div className='What' ref={this.props.props} >
+        <div className='Services' id='Our Services'>
           <ul>
             <li>Bathrooms</li>
             <li>•Kitchens •</li>
@@ -25,11 +29,8 @@ class What extends Component {
             <li>Natural Stone</li>
             <li>•Ceramic</li>
             <li>Porcelin •</li>
-
           </ul>
-
         </div>
-
         <div className='What-Words'>
           <p>You Name It, We Can Do It.</p>
           <span id='promise'>
@@ -44,9 +45,9 @@ class What extends Component {
             <br />Most of all, our work is guaranteed. And that's a promise.
           </span>
         </div>
-
       </div >
     );
   }
 }
 export default What;
+
