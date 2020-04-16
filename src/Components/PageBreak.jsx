@@ -3,14 +3,9 @@ import React, { Component } from 'react';
 const Break = () => {
   return (
     <div className='Page-Break'>
-
-      <p>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.
-
-</p>
-      <br />
+      <p>Whatever the type of project you have in mind, you can count on us to get the job done on time, on budget and to a high standard.</p>
       <p id='splash'>
-        Need Manchester Tilers ? then do not hesitate to <a href='contact'>contact us</a> for a free quotation.</p>
-
+        <a href='contact'>Contact us</a> today for a free quotation.</p>
     </div>
   );
 }

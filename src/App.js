@@ -11,6 +11,7 @@ import scrollToComponent from 'react-scroll-to-component';
 
 import Break from './Components/PageBreak';
 import Social from './Components/Social';
+import Break2 from './Components/PageBreak2';
 
 
 class App extends Component {
@@ -33,9 +34,10 @@ class App extends Component {
             <p id='topline'>Irlam Wall & Flooring .Ltd</p>
             <Header />
             <About />
-            <What ref={this.myRef} />
             <Break />
+            <What ref={this.myRef} />
             <Social />
+            <Break2 />
             <Who />
           </div>
 
