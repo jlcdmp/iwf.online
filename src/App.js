@@ -41,6 +41,7 @@ class App extends Component {
             <Who />
           </div>
 
+          <span value='up' onClick={this.handleClick} id='topline'>Back To The Top ↑</span>
           <Footer />
         </div>
 
@@ -55,14 +56,16 @@ class App extends Component {
 
   handleClick = event => {
 
-    console.log()
+    event.persist()
+
+    console.log(event.target.id)
 
     // this.myRef.current.scrollIntoView({
     //   behaivour: 'smooth',
     //   block: 'end'
     // })
 
-    const anchor = document.querySelector('#test')
+    const anchor = document.querySelector(`#${event.target.id}`)
     anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
     // scrollToComponent(this.myRef.current)
