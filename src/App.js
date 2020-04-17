@@ -6,72 +6,67 @@ import About from './Components/About';
 import What from './Components/What';
 import Who from './Components/Who';
 import Footer from './Components/Footer';
-// import scrollToComponent from 'react-scroll-to-component';
 import Break from './Components/PageBreak';
 import Social from './Components/Social';
 import Break2 from './Components/PageBreak2';
 
 class App extends Component {
 
-
-
-  myRef = React.createRef();
-
   state = {
-    value: ''
+    homeRef: React.createRef(),
+    servRef: React.createRef(),
+    newsRef: React.createRef()
   }
-
-
 
   render() {
     return (
       <div className="App">
-
-        <Nav handleClick={this.handleClick} />
+        <Nav handleScrollNav={this.handleScrollNav} />
 
         <div className='PageContentStore'>
+
           <div className='Content'>
             <p id='topline'>Irlam Wall & Flooring .Ltd</p>
-            <Header />
+            <Header props={this.state.homeRef} />
             <About />
             <Break />
+            <What props={this.state.servRef} />
 
-            <What props={this.myRef} />
-
-            <Social props={this.myRef} />
+            <Social props={this.state.newsRef} />
             <Break2 />
-            <Who />
-          </div>
 
-          <span onClick={this.handleClick} id='topline' style={{ cursor: "pointer" }} >Back To The Top ↑</span>
+            <Who />
+
+          </div>
+          <span id='topline' style={{ cursor: "pointer" }} >Back To The Top ↑</span>
           <Footer />
         </div>
-
       </div>
     );
   }
 
 
-  handleClick = event => {
-    event.persist()
 
-    const elementToScrollTo = this.myRef.current
+  handleScrollNav = event => {
 
-    let name = `#${event.target.innerText}`
+    //  console.log(event.target.innerText)
 
+    const clicked = event.target.innerText
 
+    const options = { behavior: 'smooth', block: 'start' }
 
+    if (clicked === 'Home') {
+      this.state.homeRef.current.scrollIntoView(options)
+    } else if (clicked === 'Our Services') {
+      this.state.servRef.current.scrollIntoView(options)
+    } else if (clicked === 'News') {
+      this.state.newsRef.current.scrollIntoView(options)
+    } else {
+      console.log('Did Not Match Any Conditions')
+    }
 
-    elementToScrollTo.scrollIntoView({ behavior: 'smooth', block: 'start' })
-
-    // this.myRef.current.scrollIntoView({
-    //   behaivour: 'smooth',
-    //   block: 'end'
-    // })
-
-    // const anchor = document.querySelector(`#${event.target.id}`)
-
-    // anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
+
+
 export default App;

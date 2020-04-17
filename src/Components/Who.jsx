@@ -1,7 +1,15 @@
 import React from 'react';
-const Who = () => {
+
+
+const Who = React.forwardRef((props, ref) => {
+
   return (
-    <div className='Who'>
+
+    <div className='Who' ref={ref}>
+
+
+      {props.children}
+
       <span className='Page-Heading'>Our Client's & Contact's</span>
       <p>Working predominantly in Manchester and the North West, our skilled tilers have contributed to many prestigious projects for hotels, pubs, restaurants, retail chains and leisure companies and high profile clients such as Salford Cathedral and Media City. </p>
       <p>We have ‘preferred supplier’ status for a number of firms across the UK and have retained contracts with these and other companies for many years.</p>
@@ -24,5 +32,6 @@ const Who = () => {
       </div>
     </div>
   );
-}
+})
+
 export default Who;

@@ -5,14 +5,12 @@ class What extends Component {
   }
 
 
-
   render() {
 
     return (
-
-      < div className='What' ref={this.props.props} >
+      < div className='What' ref={this.props.props}>
         <div className='Services' id='Our Services'>
-          <ul>
+          <ul >
             <li>Bathrooms</li>
             <li>•Kitchens •</li>
             <li>Entrance's</li>
@@ -47,6 +45,8 @@ class What extends Component {
         </div>
       </div >
     );
+
+
   }
 }
 export default What;

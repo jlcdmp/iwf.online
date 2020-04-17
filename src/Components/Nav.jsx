@@ -4,7 +4,10 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import ClickOutside from './ClickOutside'
 
 class Nav extends Component {
-  state = {}
+
+  state = {
+    clicked: true
+  }
 
   render() {
     return (
@@ -24,7 +27,9 @@ class Nav extends Component {
 
           <SideNav.Nav defaultSelected="home" >
 
-            <NavItem eventKey="home" >
+            <NavItem eventKey="home" onClick={this.props.handleScrollNav} >
+
+
               <NavIcon>
                 <i className="fa fa-fw fa-home" style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -33,7 +38,7 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-            <NavItem eventKey='services' onClick={this.props.handleClick} >
+            <NavItem eventKey='services' onClick={this.props.handleScrollNav} >
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -42,7 +47,7 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-            <NavItem eventKey='area'>
+            <NavItem eventKey='news' onClick={this.props.handleScrollNav}>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -51,7 +56,7 @@ class Nav extends Component {
             </NavText>
             </NavItem>
 
-            <NavItem eventKey='contact' onClick={this.props.handleClick}>
+            <NavItem eventKey='contact'>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -61,7 +66,7 @@ class Nav extends Component {
             </NavItem>
           </SideNav.Nav>
         </SideNav>
-      </ClickOutside>
+      </ClickOutside >
     );
   }
 
