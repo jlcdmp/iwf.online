@@ -11,21 +11,23 @@ class Nav extends Component {
 
   render() {
     return (
-      <ClickOutside
+      <ClickOutside className='test'
         onClickOutside={() => {
           this.setState({ expanded: false });
+          this.props.addClass()
         }}
       >
 
         <SideNav
           expanded={this.state.expanded}
           onToggle={(expanded) => {
-            this.setState({ expanded });
+            this.setState({ expanded })
+            this.props.addClass();
           }}>
 
 
 
-          <SideNav.Toggle onClick={this.props.addClass} />
+          <SideNav.Toggle />
 
           <SideNav.Nav defaultSelected="home" >
 
