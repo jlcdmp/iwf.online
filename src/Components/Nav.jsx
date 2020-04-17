@@ -6,7 +6,7 @@ import ClickOutside from './ClickOutside'
 class Nav extends Component {
 
   state = {
-    clicked: true
+    expanded: false
   }
 
   render() {
@@ -23,7 +23,9 @@ class Nav extends Component {
             this.setState({ expanded });
           }}>
 
-          <SideNav.Toggle />
+
+
+          <SideNav.Toggle onClick={this.props.addClass} />
 
           <SideNav.Nav defaultSelected="home" >
 

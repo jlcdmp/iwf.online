@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from './Components/Header';
 import Nav from './Components/Nav';
 import About from './Components/About';
@@ -16,13 +19,15 @@ class App extends Component {
     homeRef: React.createRef(),
     servRef: React.createRef(),
     newsRef: React.createRef(),
-    top: React.createRef()
+    top: React.createRef(),
+    active: false,
+
   }
 
   render() {
     return (
       <div className="App">
-        <Nav handleScrollNav={this.handleScrollNav} />
+        <Nav handleScrollNav={this.handleScrollNav} addClass={this.addClass} />
 
         <div className='PageContentStore'>
 
@@ -42,8 +47,14 @@ class App extends Component {
           <span id='topline' style={{ cursor: "pointer" }} onClick={() => this.state.top.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Back To The Top ↑</span>
           <Footer />
         </div>
+        <div className={`overlay-${this.state.active === true ? "active" : null}`} ></div>
       </div>
     );
+  }
+
+
+  addClass = () => {
+    this.setState({ active: !this.state.active })
   }
 
 
