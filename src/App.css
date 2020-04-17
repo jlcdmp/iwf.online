@@ -99,6 +99,21 @@ position: fixed;
 
 }
 
+
+.Content{
+padding:2px !important;
+}
+
+
+.Header-Open{
+  height: auto;
+  margin:auto;
+  height: 90vh !important;
+}
+
+.Header-Open p{
+  font-size: 4em !important;
+}
 }
 
 
