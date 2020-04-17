@@ -15,7 +15,8 @@ class App extends Component {
   state = {
     homeRef: React.createRef(),
     servRef: React.createRef(),
-    newsRef: React.createRef()
+    newsRef: React.createRef(),
+    top: React.createRef()
   }
 
   render() {
@@ -26,7 +27,7 @@ class App extends Component {
         <div className='PageContentStore'>
 
           <div className='Content'>
-            <p id='topline'>Irlam Wall & Flooring .Ltd</p>
+            <p id='topline' ref={this.state.top}>Irlam Wall & Flooring .Ltd</p>
             <Header props={this.state.homeRef} />
             <About />
             <Break />
@@ -38,7 +39,7 @@ class App extends Component {
             <Who />
 
           </div>
-          <span id='topline' style={{ cursor: "pointer" }} >Back To The Top ↑</span>
+          <span id='topline' style={{ cursor: "pointer" }} onClick={() => this.state.top.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Back To The Top ↑</span>
           <Footer />
         </div>
       </div>
@@ -64,6 +65,9 @@ class App extends Component {
     } else {
       console.log('Did Not Match Any Conditions')
     }
+
+
+
 
   }
 }
