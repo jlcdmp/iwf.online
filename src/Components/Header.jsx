@@ -11,7 +11,7 @@ class Header extends Component {
     return (
       <div className='Header-Open' ref={this.props.props}>
 
-        <p>We are a Wall & Floor tilling specialists based in Manchester</p>
+        <p>We are Wall & Floor tilling specialists based in Manchester</p>
 
         <p>Operating nationwide domestical and comericial.</p>
 

@@ -77,6 +77,13 @@ left: 0 !important;
   background: none !important;
 }
   
+
+.sidenav---expanded---1KdUL{
+  background: #242424;
+  height: 45vh
+}
+
+
 .sidenav---sidenav-toggle---1KRjR{
   background-color: #242424 !important;
 }
@@ -106,14 +113,194 @@ padding:2px !important;
 
 
 .Header-Open{
-  height: auto;
-  margin:auto;
-  height: 90vh !important;
+  height: 80vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
 }
 
 .Header-Open p{
-  font-size: 4em !important;
+  font-size: 4.3em !important;
+  line-height: 1.1em !important;
+  margin: 0.2em 0.4em 0 0.3em! important;
+  text-align: justify !important;
+
 }
+
+
+.AboutOpen{
+  flex-direction: column-reverse !important;
+  margin: auto !important;
+}
+
+.AboutOpen h1{
+  font-size: 15em !important;
+}
+
+
+.Page-Break{
+  margin:1em auto !important;
+  padding: 5px !important;
+}
+
+.Page-Break p{
+  padding: 5px !important
+}
+
+
+.What{
+  flex-direction: column!important;
+  margin: auto !important;
+  padding: 2px !important;
+}
+
+
+.What-Words{
+  padding: 2px !important;
+  margin-top: 1em;
+}
+
+#promise{
+  width: auto !important;
+  line-height: 1.4em ! important ;
+  padding: 5px !important;
+  text-align: justify !important;
+}
+
+.What-Words p{
+  font-size: 2.2em !important;
+}
+
+.Services{
+  margin: 0 !important;
+}
+
+.Services ul{
+  width: auto !important;
+}
+
+
+.Services li{
+  font-size: 2.6em !important;
+}
+
+.Socials{
+  flex-direction: column !important;
+  margin: auto !important;
+  padding: 2px !important;
+}
+
+.Reviews{
+  margin: auto !important;
+  align-self: center !important;
+}
+
+#topper{
+  width: auto !important;
+  text-align: justify !important;
+  margin-top: 0.5em;
+  font-size: 2em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.Review-Container{
+  margin: 5px;
+  padding : 0 0 5px 5px !important;
+}
+
+.Mini-Contact{
+  margin: 1em auto ! important ;
+  width:auto !important;
+  padding : 0 !important;
+}
+
+.Contact-Words{
+  padding-right:5px !important;
+}
+
+#touch{
+  font-size: 2em !important;
+  line-height: 1em;
+  padding:2px;
+}
+
+
+#touch-info{
+  font-size: 1.5em !important;
+  padding: 2px;
+}
+
+.Reviews{
+  width: 95% !important;
+  padding: 1px !important;
+  margin : 0 !important;
+}
+
+
+.Item-Container{
+  margin-left: 0.5em !important;
+}
+
+.Contact-Item{
+  margin-bottom: 5px !important;
+}
+
+.Contact-Item span{
+  font-size: 1.3em !important;
+}
+
+.twitterContainer{
+  padding: 0 !important;
+  width: auto !important;
+}
+
+.twitter-embed{
+  width: auto !important;
+}
+
+.Who{
+  margin: auto !important;
+  padding: 2px !important;
+}
+
+.Who p{
+  padding : 2px !important;
+  font-size: 1.6em !important;
+}
+
+.LogoStore{
+  width: auto !important;
+  grid-gap: 0.5em !important;
+  margin: 1em 0.5em !important;
+  padding: 1px
+}
+
+.LogoStore span{
+  font-size: 2em !important;
+}
+
+.Footer{
+  margin-left:0 !important;
+  flex-direction: column !important;
+}
+
+.Info1 {
+  padding: 2px !important;
+  margin: 5px  !important;
+}
+
+.Info2{
+  padding: 2px !important;
+  margin : 5px !important;
+}
+
+
+
+#topline{
+  padding:10px !important;
+}
+
+
 }
 
 
@@ -316,7 +503,7 @@ flex-direction: row;
 }
 
 .Contact-Words{
-  border-right:solid 1px grey;
+  border-right:solid 1px whitesmoke;
   padding-right: 1em;;
 }
 
@@ -361,7 +548,7 @@ margin:auto;
 }
 
 #title p{
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
   margin:3px;
   font-family: 'Manrope';
@@ -413,7 +600,7 @@ margin:auto;
   font-size: 1em;
   display: flex; 
   flex-direction: row;
-  margin-left: 0.5em !important;
+  margin-left: 0.5em ;
   margin-top:1em;
 }
 
