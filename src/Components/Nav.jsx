@@ -6,23 +6,27 @@ import ClickOutside from './ClickOutside'
 class Nav extends Component {
 
   state = {
-    expanded: false
+    expanded: false,
+    overlay: null,
+    click: false,
   }
+
+
+
+
+
+
 
   render() {
     return (
       <ClickOutside className='test'
-        onClickOutside={() => {
-          this.setState({ expanded: false });
-          this.props.addClass()
-        }}
-      >
+        onClickOutside={this.handleOutsideClick}>
 
         <SideNav
           expanded={this.state.expanded}
           onToggle={(expanded) => {
-            this.setState({ expanded })
-            this.props.addClass();
+            this.setState({ expanded, overlay: !this.state.overlay, click: !this.state.navclick })
+            this.props.addClass(1);
           }}>
 
 
@@ -81,7 +85,25 @@ class Nav extends Component {
 
 
 
+  handleOutsideClick = e => {
 
+
+    if (this.state.expanded === true) {
+      this.setState({
+        expanded: !this.state.expanded,
+        overlay: !this.state.overlay
+      })
+    }
+
+
+    if (this.state.click === true) {
+      this.props.addClass()
+      this.setState({ click: false })
+    }
+
+
+
+  }
 
 
 

@@ -52,7 +52,8 @@ class App extends Component {
   }
 
 
-  addClass = () => {
+  addClass = (test) => {
+    console.log(test)
     this.setState({ active: !this.state.active })
   }
 
