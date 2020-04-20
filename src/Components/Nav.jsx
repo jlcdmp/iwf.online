@@ -20,7 +20,7 @@ class Nav extends Component {
           expanded={this.state.expanded}
           onToggle={(expanded) => {
             this.setState({ expanded, overlay: !this.state.overlay, click: !this.state.click })
-            this.props.addClass(1);
+            this.props.addClass();
           }}>
           <SideNav.Toggle />
           <SideNav.Nav defaultSelected="home" >
@@ -78,5 +78,7 @@ class Nav extends Component {
       this.setState({ click: !click })
     }
   }
+
 }
+
 export default Nav;

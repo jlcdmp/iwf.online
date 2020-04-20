@@ -34,8 +34,8 @@ class App extends Component {
             <p id='topline' ref={this.state.top}>Irlam Wall & Flooring .Ltd</p>
             <Header props={this.state.homeRef} />
             <About />
-            <Break />
             <What props={this.state.servRef} />
+            <Break />
 
             <Social props={this.state.newsRef} />
             <Break2 />
@@ -52,8 +52,7 @@ class App extends Component {
   }
 
 
-  addClass = (test) => {
-    console.log(test)
+  addClass = () => {
     this.setState({ active: !this.state.active })
   }
 

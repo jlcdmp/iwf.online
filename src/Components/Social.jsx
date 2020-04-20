@@ -10,7 +10,7 @@ const Social = (props) => {
 
 
       <div className='Reviews'>
-        <p id='topper'>Always using the highest quality materials plus expert knowledge of the tiling industry – that is how we stay up-to-date with changing technologies and techniques.</p>
+        <p id='topper'>Always using the highest quality materials plus expert knowledge of the tiling industry is how we stay up-to-date with changing technologies and techniques.</p>
         <p>What our customers say..</p>
         <ul className='Review-Container'>
           <li className='Review'>''Pellentesque ornare dui eu arcu interdum, nec auctor eros rutrum. Integer cursus enim quis imperdiet elementum. Cras ornare hendrerit aliquam. Maecenas vitae elementum massa. Vestibulum ante ipsum primis in faucibus.''</li>

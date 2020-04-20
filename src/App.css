@@ -315,7 +315,6 @@ padding:2px !important;
 
 .Content{
   position: relative;
-  border: solid red 1px;
   margin: 0 1em;
   padding:5px;
 }
@@ -325,7 +324,6 @@ padding:2px !important;
   height:92vh;
   display: table-cell;
   vertical-align: middle;
-  border: solid 1px blue;
   width: 90%;
 }
 
@@ -348,8 +346,12 @@ padding:2px !important;
 font-size: 1em;
 display: flex;
 flex-direction: row-reverse;
-border: solid 1px blue;
-margin: 1em 
+margin: 1em 1em 3em 1em !important;
+}
+
+.AboutWords{
+  padding-left: 1.5em;
+  padding-top: 2em;
 }
 
 .AboutOpen p{
@@ -379,59 +381,65 @@ margin: 1em
 
 .What{
   margin-top: 2em;
-  border: solid 1px blue;
-  padding:5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .Services{
-  margin-left: 1em
+  margin-left: 0.5em;
+  margin-top: 4em;
+  margin-right: 2em;
 }
 
 .Services ul {
+  border:solid 1px red;
   list-style: none;
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 40em;
+  padding: 2px !important;
+  width: 37em;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Services li{
   font-family: 'Manrope',sans-serif;
-  font-weight: 650;
-  font-size: 3.3em;
-  line-height: 1.1em;
-  display: inline-block
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1.2em;
+  color: #333333 !important;
 }
+
+
 
 .What-Words{
   display: flex;
   flex-direction: column;
-  padding:10px;
+  text-align: center;
+  margin-left: 0.5em;
 }
+
 
 .What-Words p{
   font-family: 'Manrope' , sans-serif;
-  font-weight: 550;
-  font-size: 2.5em;
-  color: #242424;
-  margin: auto;
+  font-weight: 700;
+  font-size: 2.9em;
+  color: #ff834a;
+  text-align: center;
+  margin: 0 auto 15px auto;
 }
 
 #promise{
+  font-family: 'ZillaSlab-regular';
   font-size: 1.6em;
-  font-family: 'ZillaSlab-light';
-  text-align: justify;
-  padding:5px;
-  width:87%;
-  margin:auto;
-  line-height: 1.1em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
+} 
 
-}
 
  .Socials{
-border:solid 1px blue; 
-padding: 5px;
+padding: 2px;
 margin-top: 2em;
 display:flex;
 flex-direction: row;
@@ -442,16 +450,20 @@ flex-direction: row;
  #topper{
    font-size: 1.8em;
    margin-bottom: 1em;
-   text-align:right;
-   width:97%;
+   text-align:justify;
+   font-family: 'Manrope';
+   font-weight:600;
+   line-height: 1.3em;
+   color: #ff834a;
+   width: 90%;
  }
 
 
 
 .Reviews{
   padding: 10px;
-  width:85%;
-  margin:auto;
+  width:80%;
+  margin:0;
   margin-right:1em;
 }
 
@@ -482,6 +494,7 @@ flex-direction: row;
 .twitterContainer{
   padding:5px;
   width:80%;
+  margin-top: 5em !important;
 }
 
 .twitter-follow-button-rendered{
@@ -620,7 +633,7 @@ margin:auto;
 .Page-Break{
   padding:10px;
   background-color: #F0EDEC;
-  margin: 2em -2em 0 -2em;
+  margin: 0.5em -2em 0 -2em;
   display: flex;
   flex-direction: column;
 }
