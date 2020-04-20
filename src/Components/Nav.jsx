@@ -11,12 +11,6 @@ class Nav extends Component {
     click: false,
   }
 
-
-
-
-
-
-
   render() {
     return (
       <ClickOutside className='test'
@@ -25,19 +19,12 @@ class Nav extends Component {
         <SideNav
           expanded={this.state.expanded}
           onToggle={(expanded) => {
-            this.setState({ expanded, overlay: !this.state.overlay, click: !this.state.navclick })
+            this.setState({ expanded, overlay: !this.state.overlay, click: !this.state.click })
             this.props.addClass(1);
           }}>
-
-
-
           <SideNav.Toggle />
-
           <SideNav.Nav defaultSelected="home" >
-
             <NavItem eventKey="home" onClick={this.props.handleScrollNav} >
-
-
               <NavIcon>
                 <i className="fa fa-fw fa-home" style={{ fontSize: '3em' }} />
               </NavIcon>
@@ -45,7 +32,6 @@ class Nav extends Component {
                 Home
             </NavText>
             </NavItem>
-
             <NavItem eventKey='services' onClick={this.props.handleScrollNav} >
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
@@ -54,7 +40,6 @@ class Nav extends Component {
                 Our Services
             </NavText>
             </NavItem>
-
             <NavItem eventKey='news' onClick={this.props.handleScrollNav}>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
@@ -63,7 +48,6 @@ class Nav extends Component {
                 News
             </NavText>
             </NavItem>
-
             <NavItem eventKey='contact'>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />
@@ -78,38 +62,21 @@ class Nav extends Component {
     );
   }
 
-
-
-
-
-
-
-
   handleOutsideClick = e => {
+    const expanded = this.state.expanded
+    const overlay = this.state.overlay
+    const click = this.state.click
 
-
-    if (this.state.expanded === true) {
+    if (expanded === true) {
       this.setState({
-        expanded: !this.state.expanded,
-        overlay: !this.state.overlay
+        expanded: !expanded,
+        overlay: !overlay
       })
     }
-
-
-    if (this.state.click === true) {
+    if (click === true) {
       this.props.addClass()
-      this.setState({ click: false })
+      this.setState({ click: !click })
     }
-
-
-
   }
-
-
-
-
-
-
-
 }
 export default Nav;
