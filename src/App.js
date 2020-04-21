@@ -10,7 +10,6 @@ import Who from './Components/Who';
 import Footer from './Components/Footer';
 import Break from './Components/PageBreak';
 import Social from './Components/Social';
-import Break2 from './Components/PageBreak2';
 
 class App extends Component {
 
@@ -38,7 +37,6 @@ class App extends Component {
             <Break />
 
             <Social props={this.state.newsRef} />
-            <Break2 />
 
             <Who />
 

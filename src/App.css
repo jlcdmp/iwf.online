@@ -5,7 +5,10 @@ body {
 }
 
 
-
+a{
+color: #f57f4f;
+text-decoration: none !important;
+}
 
 
 .overlay-active {
@@ -321,25 +324,28 @@ padding:2px !important;
 
 .Header-Open{
   color: #242424;
-  height:92vh;
+  height:93vh;
   display: table-cell;
   vertical-align: middle;
   width: 90%;
 }
 
 #topline{
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin:auto;
-  color: #9e9e9e;
+  color: #f57f4f;
   font-family: 'ZillaSlab-light'
 }
 
 .Header-Open p{
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4em;
   font-family: "Manrope";
   font-weight: 700;
-  color:#505050
+  color:gainsboro;
+  line-height: 1.5em;
+  width: 95%;
+  margin:auto;
 }
 
 .AboutOpen{
@@ -362,16 +368,19 @@ margin: 1em 1em 3em 1em !important;
 }
 
 .AboutOpen h1{
-  color: #4b4b4b;
+  color: #f5f5f5;
   text-align: center;
   border: dashed 1px black;
   font-size: 200px;
   margin:0 !important;
   padding: 20px;
+  background-color: #242424;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30)
+
 }
 
 .Page-Heading{
-  color: #8d8d8d;
+  color: gainsboro;
   font-family: 'Manrope';
   font-size: 2.2em;
   font-weight: 750;
@@ -380,25 +389,35 @@ margin: 1em 1em 3em 1em !important;
 }
 
 .What{
-  margin-top: 2em;
+  margin: 4em auto 2em auto;;
   display: flex;
   flex-direction: row-reverse;
+  width: 95%;
 }
 
 .Services{
-  margin-left: 0.5em;
-  margin-top: 4em;
-  margin-right: 2em;
+ margin-top: 2em;
+ padding:5px;
+}
+
+.Services p{
+  font-size: 3.2em;
+  font-family: 'Manrope';
+  font-weight: 700;
+  color: #f57f4f;
+  width: 200%;
+  margin: 20px auto auto -1.5em;
+  text-align: left;
 }
 
 .Services ul {
-  border:solid 1px red;
-  list-style: none;
-  padding: 2px !important;
-  width: 37em;
+  width: 36em;
   display: inline-flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding:0 ;
 }
 
 .Services li{
@@ -410,32 +429,20 @@ margin: 1em 1em 3em 1em !important;
 }
 
 
-
-.What-Words{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-left: 0.5em;
-}
-
-
-.What-Words p{
-  font-family: 'Manrope' , sans-serif;
-  font-weight: 700;
-  font-size: 2.9em;
-  color: #ff834a;
-  text-align: center;
-  margin: 0 auto 15px auto;
-}
-
 #promise{
   font-family: 'ZillaSlab-regular';
+  font-weight: 500;
   font-size: 1.6em;
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px;
-  width: 90%;
+  text-align: justify;
+  line-height: 1.3em;
+  margin-right: 1.5em;
 } 
+
+
+#our-promise{
+  font-size: 1.3em;
+  color: #f57f4f;
+}
 
 
  .Socials{
@@ -448,14 +455,14 @@ flex-direction: row;
 
 
  #topper{
-   font-size: 1.8em;
+   font-size: 2em;
    margin-bottom: 1em;
    text-align:justify;
    font-family: 'Manrope';
-   font-weight:600;
+   font-weight:500;
    line-height: 1.3em;
    color: #ff834a;
-   width: 90%;
+   width: 92%;
  }
 
 
@@ -507,6 +514,10 @@ flex-direction: row;
   width:35em;
 }
 
+#follow-button{
+  background-color: #6f00ff !important
+}
+
 .Mini-Contact{
   padding:5px;
   width: 90%;
@@ -538,6 +549,7 @@ margin-bottom: 10px;
   font-family: 'Manrope';
   font-weight: 600;
   text-align: right;
+  color: #f57f4f
 }
 
 #touch-info{
@@ -565,7 +577,8 @@ margin:auto;
   font-size: 1.5em;
   margin:3px;
   font-family: 'Manrope';
-  font-weight: 600;
+  font-weight: 500;
+text-decoration: underline
 }
 
 .Contact-Item span{
@@ -573,7 +586,7 @@ margin:auto;
   text-align: center;
   margin:0 auto auto 0;
   font-family: 'Manrope';
-
+  color: #6f00ff
 }
 
 .Who{
@@ -631,33 +644,64 @@ margin:auto;
 }
 
 .Page-Break{
-  padding:10px;
-  background-color: #F0EDEC;
   margin: 0.5em -2em 0 -2em;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+  background-color: #f5f5f5;
+  padding: 3em 0
 }
 
 .Page-Break p{
-  font-family: 'Manrope', sans-serif;
+  font-size: 2.4em;
+  text-align: justify;
+  font-weight: 500;
+  width: 65%;
   margin:auto;
-  font-size: 1.6em;
-  text-align: center;
-  padding:5px 2em 5px 2em;
-  font-weight: 600;
+  line-height: 1.3em;
+  font-family: 'manrope';
+  font-weight: 750;
+  color: #242424
 }
 
 #splash{
-  color: #ff834a;
+  color: #f57f4f;
   font-weight: 700;
-  font-size: 2em;
+  font-family: 'Manrope';
+  margin-top: 0.7em !important;
   text-align: center;
-  padding-top:0;
 }
 
 
-#page-break-2{
-  line-height: 1.6em;
-  font-size: 1.5em;
+
+.arrow{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 8px solid gainsboro;
+    border-right: 8px solid gainsboro;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

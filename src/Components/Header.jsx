@@ -14,7 +14,9 @@ class Header extends Component {
         <p>We are Wall & Floor tilling specialists based in Manchester</p>
 
         <p>Operating nationwide domestical and comericial.</p>
-
+        <div class='arrow'>
+          <span></span>
+        </div>
       </div>
     );
 
