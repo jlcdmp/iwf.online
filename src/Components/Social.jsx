@@ -8,22 +8,17 @@ const Social = (props) => {
   return (
     <div className='Socials' ref={props.props}>
 
+      {/* <p id='topper'>Always using the highest quality materials plus expert knowledge of the tiling industry is how we stay up-to-date with changing technologies and techniques.</p>
+      <p>What our customers say..</p> */}
 
       <div className='Reviews'>
-        <p id='topper'>Always using the highest quality materials plus expert knowledge of the tiling industry is how we stay up-to-date with changing technologies and techniques.</p>
-        <p>What our customers say..</p>
+
         <ul className='Review-Container'>
           <li className='Review'>''Pellentesque ornare dui eu arcu interdum, nec auctor eros rutrum. Integer cursus enim quis imperdiet elementum. Cras ornare hendrerit aliquam. Maecenas vitae elementum massa. Vestibulum ante ipsum primis in faucibus.''</li>
           <li className='Reviewer'>- Joe Bloggs</li>
         </ul>
-        <ul className='Review-Container' >
-          <li className='Review' >''Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque molestie purus non massa ultrices, eu.''</li>
-          <li className='Reviewer' >- John Smith</li>
-        </ul>
-        <ul className='Review-Container' >
-          <li className='Review' >''Pellentesque ipsum erat, condimentum et lacinia a, aliquet vel.''</li>
-          <li className='Reviewer'>- Sandy Cheeks</li>
-        </ul>
+
+
         <div className='Mini-Contact'>
           <div className='Contact-Words'>
             <p id='touch'>Get in touch today </p>

@@ -10,6 +10,7 @@ import Who from './Components/Who';
 import Footer from './Components/Footer';
 import Break from './Components/PageBreak';
 import Social from './Components/Social';
+import Contact from './Contacts';
 
 class App extends Component {
 
@@ -34,14 +35,30 @@ class App extends Component {
             <Header props={this.state.homeRef} />
             <About />
             <What props={this.state.servRef} />
+
             <Break />
 
-            <Social props={this.state.newsRef} />
+            {
+              // < Social props={this.state.newsRef} />
+            }
 
-            <Who />
+
+            {
+              // <Who />
+            }
+
+            <Contact />
 
           </div>
-          <span id='topline' style={{ cursor: "pointer" }} onClick={() => this.state.top.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Back To The Top ↑</span>
+
+          {
+            /*  
+             <span id='topline' style={{ cursor: "pointer" }} onClick={() => this.state.top.current.scrollIntoView({ behavior: 'smooth', 
+             block: 'start' })}>Back To The Top ↑</span>
+            /* */
+          }
+
+
           <Footer />
         </div>
         <div className={`overlay-${this.state.active === true ? "active" : null}`} ></div>
