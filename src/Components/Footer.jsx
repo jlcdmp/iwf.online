@@ -1,26 +1,22 @@
 import React from 'react';
 
 
-const Footer = () => {
+const Footer = (props) => {
+
+
+
   return (
     <div className='Footer'>
 
-      <ul className='Info1'>
-        <li>Vivamus vehicula sem arcu, convallis.</li>
-        <li>Nunc a nulla ligula. Sed.</li>
-        <li>Etiam sed ornare odio, semper.</li>
-      </ul>
+      <span onClick={props.handleScrollNav} id='backTop'>To The Top ↑</span>
 
 
-      <p>Nullam commodo massa pulvinar nunc porta auctor. Proin.</p>
+      <span>© 2020 Irlam Wall & Flooring .Ltd</span>
 
-      <ul className='Info2'>
-        <li>000-000-000</li>
-        <li>000-000@000.000</li>
-        <li>IWF TILING 2020</li>
-      </ul>
     </div>
   );
 }
+
+
 
 export default Footer

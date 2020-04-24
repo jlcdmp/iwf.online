@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 import Header from './Components/Header';
 import Nav from './Components/Nav';
 import About from './Components/About';
@@ -13,89 +12,61 @@ import Social from './Components/Social';
 import Contact from './Contacts';
 
 class App extends Component {
-
   state = {
     homeRef: React.createRef(),
     servRef: React.createRef(),
     newsRef: React.createRef(),
-    top: React.createRef(),
+    topRef: React.createRef(),
     active: false,
-
   }
 
   render() {
     return (
       <div className="App">
         <Nav handleScrollNav={this.handleScrollNav} addClass={this.addClass} />
-
         <div className='PageContentStore'>
-
           <div className='Content'>
-            <p id='topline' ref={this.state.top}>Irlam Wall & Flooring .Ltd</p>
+
+            <p id='topline' ref={this.state.topRef}> Irlam Wall & Flooring .Ltd</p>
+
             <Header props={this.state.homeRef} />
             <About />
             <What props={this.state.servRef} />
-
             <Break />
-
             {
               // < Social props={this.state.newsRef} />
             }
 
-
-            {
-              // <Who />
-            }
+            <Who />
 
             <Contact />
-
           </div>
 
-          {
-            /*  
-             <span id='topline' style={{ cursor: "pointer" }} onClick={() => this.state.top.current.scrollIntoView({ behavior: 'smooth', 
-             block: 'start' })}>Back To The Top ↑</span>
-            /* */
-          }
 
-
-          <Footer />
+          <Footer props={this.state.topRef} handleScrollNav={this.handleScrollNav} />
         </div>
         <div className={`overlay-${this.state.active === true ? "active" : null}`} ></div>
       </div>
     );
   }
-
-
   addClass = () => {
     this.setState({ active: !this.state.active })
   }
-
-
-
   handleScrollNav = event => {
-
-    //  console.log(event.target.innerText)
-
+    console.log(event.target.innerText)
     const clicked = event.target.innerText
-
     const options = { behavior: 'smooth', block: 'start' }
-
     if (clicked === 'Home') {
       this.state.homeRef.current.scrollIntoView(options)
     } else if (clicked === 'Our Services') {
       this.state.servRef.current.scrollIntoView(options)
     } else if (clicked === 'News') {
       this.state.newsRef.current.scrollIntoView(options)
+    } else if (clicked === 'To The Top ↑') {
+      this.state.topRef.current.scrollIntoView(options)
     } else {
       console.log('Did Not Match Any Conditions')
     }
-
-
-
-
   }
 }
-
-
 export default App;
