@@ -48,6 +48,23 @@ class Nav extends Component {
                 News
             </NavText>
             </NavItem>
+
+            <NavItem eventKey='contact'>
+              <NavIcon>
+                <i style={{ fontSize: '3em' }} />
+              </NavIcon>
+              <NavText>
+                Areas Of Operation
+            </NavText>
+            </NavItem>
+            <NavItem eventKey='contact'>
+              <NavIcon>
+                <i style={{ fontSize: '3em' }} />
+              </NavIcon>
+              <NavText>
+                Reviews
+            </NavText>
+            </NavItem>
             <NavItem eventKey='contact'>
               <NavIcon>
                 <i style={{ fontSize: '3em' }} />

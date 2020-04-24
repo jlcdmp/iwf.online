@@ -8,8 +8,7 @@ import What from './Components/What';
 import Who from './Components/Who';
 import Footer from './Components/Footer';
 import Break from './Components/PageBreak';
-import Social from './Components/Social';
-import Contact from './Contacts';
+import Contact from './Components/Contact';
 
 class App extends Component {
   state = {
@@ -26,36 +25,32 @@ class App extends Component {
         <Nav handleScrollNav={this.handleScrollNav} addClass={this.addClass} />
         <div className='PageContentStore'>
           <div className='Content'>
-
             <p id='topline' ref={this.state.topRef}> Irlam Wall & Flooring .Ltd</p>
-
             <Header props={this.state.homeRef} />
             <About />
             <What props={this.state.servRef} />
             <Break />
-            {
-              // < Social props={this.state.newsRef} />
-            }
-
             <Who />
-
             <Contact />
           </div>
-
-
           <Footer props={this.state.topRef} handleScrollNav={this.handleScrollNav} />
         </div>
         <div className={`overlay-${this.state.active === true ? "active" : null}`} ></div>
       </div>
     );
   }
+
   addClass = () => {
     this.setState({ active: !this.state.active })
   }
+
   handleScrollNav = event => {
+
     console.log(event.target.innerText)
+
     const clicked = event.target.innerText
     const options = { behavior: 'smooth', block: 'start' }
+
     if (clicked === 'Home') {
       this.state.homeRef.current.scrollIntoView(options)
     } else if (clicked === 'Our Services') {
@@ -69,4 +64,5 @@ class App extends Component {
     }
   }
 }
+
 export default App;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+
 class Contact extends Component {
   state = {}
 
@@ -37,14 +39,23 @@ class Contact extends Component {
           </div>
 
           <div className='Contact-Section-2' >
-
             <div className='Reviews-Container'>
               <p className='Page-Heading'>What our customers say...</p>
+
+
 
               <ul className='Review-Container'>
                 <li className='Review'>''Pellentesque ornare dui eu arcu interdum, nec auctor eros rutrum. Integer cursus enim quis imperdiet elementum. Cras ornare hendrerit aliquam. Maecenas vitae elementum massa. Vestibulum ante ipsum primis in faucibus.''</li>
                 <li className='Reviewer'>- Joe Bloggs</li>
               </ul>
+
+
+
+
+
+
+
+
             </div>
 
 
