@@ -5,8 +5,8 @@ body {
 
 
 a{
-color: #6f00ff;
-text-decoration: none !important;
+text-decoration: none !important; 
+color: #f57f4f;
 }
 
 
@@ -35,15 +35,29 @@ flex-wrap: nowrap;
 background-color: #141414 !important;
 }
 
+
+
 .sidenav---navtext---1AE_f{
   color: white !important;
   font-size: 1.5em;
 }
 
+
+
+
 #nav-contact{
   color:#ff834a !important;
   text-decoration: underline
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width:800px){
 
@@ -307,9 +321,12 @@ padding:2px !important;
 }
 
 
+
+
+
 .PageContentStore{
   position: fixed;
-  left:3em;
+  left:3.5em;
   top: 0;
   bottom: 0;
   overflow-y: scroll;
@@ -355,7 +372,7 @@ padding:2px !important;
 font-size: 1em;
 display: flex;
 flex-direction: row-reverse;
-margin: 1em 1em 3em 1em !important;
+margin: 1em 1em 2em 1em !important;
 }
 
 .AboutWords{
@@ -393,40 +410,42 @@ margin: 1em 1em 3em 1em !important;
 }
 
 .What{
-  margin: auto;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   width: 95%;
+  height: 95vh;
+  margin: 4em auto;
 }
 
 .What-Words{
-  width: 50%;
-  margin: 0 1em auto 1em;
+  width: 47%; 
+  margin-top:1em;
+  
 }
 
 #promise{
   font-family: 'ZillaSlab-regular';
   font-weight: 500;
-  font-size: 1.3em;
-  text-align: justify;
-  line-height: 1.2em;
-  padding: 0.5em 1em 0 0.5em;
+  font-size: 1.4em;
+  text-align: left;
+  line-height: 1.3em;
+  padding: 0.5em;
   margin:auto;
-  color: #242424
+  color: #242424;
 } 
 
 
 #our-promise{
-  font-size: 1.4em;
-  color: #f57f4f;
+  font-size: 1.2em;
+  color: #141414;
   font-weight: 600
 }
 
 .Services{
-  width: 50%;
-  margin-right: 1.5em;
-  margin-top: -1.5em;
+  width: 49.5%;
+  border: solid 1px red;
+  margin-left: -15px;
 }
 
 .Services ul {
@@ -435,28 +454,81 @@ margin: 1em 1em 3em 1em !important;
   justify-content: space-between;
   list-style: none;
   margin: auto;
-  padding:5px; ;
+  padding:2px;
 }
 
 .Services li{
   font-family: 'Manrope',sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.5em;
-  line-height: 1.2em;
+  line-height: 1em;
   color: #333333 !important;
+  letter-spacing: -1px;
+  word-spacing: -2px;
 }
 
 .Services p{
-  font-size: 2.8em;
+  font-size: 4.5em;
+  font-weight:700;
   font-family: 'Manrope';
-  font-weight: 800;
-  color: #f57f4f;
-  width: 150%;
-  margin: 0.5em auto 0.5em -3em;
-  text-align: left;
+  color: gainsboro;
+  margin:auto;
   }
 
 
+#services-footer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 32em;
+  margin-right: -33em;
+  margin-top:-3.5em;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  line-height: 6em;
+}
+
+#name_it{
+  margin-left:-1.3em;
+}
+
+#do_it{
+  margin-right: 0;
+}
+
+
+
+.Page-Break{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 1em;
+  margin-top: 10em;
+}
+
+.Page-Break p{
+  color: #242424;
+  background: #f5f5f5;
+  font-size: 1.6em;
+  font-family: 'manrope';
+  border-radius: 30px 30px 30px 5px;
+  padding: 20px;
+  font-weight: 600;
+}
+
+
+.Page-Break button{
+  color: #f5f5f5;
+  background-color: #f57f4f;
+  font-family: 'manrope';
+  font-size: 1.7em;
+  padding: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px 30px 30px 30px;
+  margin-top: -2.5em;
+  margin-right: -1em;
+  margin-left: 6em;
+}
 
 
  .Socials{
@@ -610,7 +682,7 @@ padding:0.5em;
 }
 
 .Who p{
-  font-size: 1.5em; 
+  font-size: 1.2em; 
   text-align: justify;
   width: 90%;
   margin:auto;
@@ -622,17 +694,23 @@ padding:0.5em;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  border: solid gainsboro 0.5px;
-  width: 80%;
-  background-color: whitesmoke;
-  grid-gap: 5px;
-  margin:1em auto;
+  background: white;
+  width: 75%;
+  margin: auto;
+
+  border: solid 1px #f5f5f5;
+  
 }
 
-.LogoStore span{
-  font-size: 2em;
-  text-align: center;
+.LogoStore img{
+width: 8em; 
+height: auto;
+padding: 5px;
+margin:auto;
 }
+
+
+
 
 .Footer{
   background-color: #f5f5f5;
@@ -662,33 +740,6 @@ padding:0.5em;
 
 
 
-.Page-Break{
-  margin: 0.5em -2em 0 -2em;
-  display: flex;
-  flex-direction: column;
-  background-color: #f5f5f5;
-  padding: 3em 0
-}
-
-.Page-Break p{
-  font-size: 2em;
-  text-align: justify;
-  font-weight: 500;
-  width: 70%;
-  margin:auto;
-  line-height: 1.2em;
-  font-family: 'manrope';
-  font-weight: 750;
-  color: #242424
-}
-
-#splash{
-  color: #f57f4f;
-  font-weight: 700;
-  font-family: 'Manrope';
-  margin-top: 0.7em !important;
-  text-align: center;
-}
 
 
 
@@ -800,3 +851,4 @@ padding:0.5em;
 {
 	color: white;
 }
+

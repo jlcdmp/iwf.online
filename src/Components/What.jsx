@@ -5,26 +5,45 @@ const What = (props) => {
     < div className='What' ref={props.props}>
       <div className='Services' id='Our Services'>
         <ul >
-          <li>Bathroom's•</li>
-          <li>Kitchen's•</li>
-          <li>Entrance's•</li>
-          <li>Showroom's</li>
-          <li>Swimming Pool's•</li>
-          <li>Glass</li>
-          <li>Office's•</li>
-          <li>Mosiac Design</li>
-          <li>Student</li>
-          <li>Accomdation's</li>
-          <li>Comercial Build's•</li>
-          <li>Domestic Propertie's</li>
-          <li>Municipal Lot's•</li>
-          <li>Limestone•</li>
-          <li>Stone•</li>
-          <li>Ceramic•</li>
-          <li>Bespoke Tile's•</li>
-          <li>Custom Order's•</li>
+          <li>Entrances</li>
+          <li>•</li>
+          <li>Office Buildings</li>
+          <li>•</li>
+          <li>Stair Cases</li>
+          <li>•</li>
+          <li>Showrooms</li>
+          <li>Domestic Properties</li>
+          <li>•</li>
+          <li>1234</li>
+          <li>•</li>
+          <li>Kitchens</li>
+          <li>•</li>
+          <li>Bathrooms</li>
+          <li>•</li>
+          <li>Wet Rooms</li>
+          <li>•</li>
+          <li>Municipal Lots</li>
+          <li>•</li>
+          <li>Student Accomdations</li>
+          <li>•</li>
+          <li>Swimming Pools</li>
+          <li>•</li>
+          <li>Mosiacs</li>
+          <li>Comercial Builds</li>
+          <li>•</li>
+          <li>Grouting</li>
+          <li>Natural Stone</li>
+          <li>•</li>
+          <li>Marble Tiles</li>
+          <li>Ceramic</li>
+          <li>•</li>
+          <li>Bespoke Fittings</li>
         </ul>
-        <p>You Name It, We Can Do It.</p>
+        <div id='services-footer'>
+          <p id='name_it'>You Name It,</p>
+          <p id='do_it'>We Can Do It.</p>
+        </div>
+
       </div>
 
       <div className='What-Words'>
