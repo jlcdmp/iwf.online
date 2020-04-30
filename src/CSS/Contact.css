@@ -1,0 +1,185 @@
+.Contact{
+  background-color: #f5f5f5;
+  margin-left: -1em;
+  margin-right: -1.5em;
+  padding: 1em 2em 0 2em;
+  margin-top: 2em;
+}
+
+.Social-Buttons-Container{
+  border-bottom: 0.5px gainsboro solid;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 1em;
+}
+
+
+.social-buttons{
+  margin:10px;
+}
+
+.Section-Container{
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px gainsboro;
+  padding-bottom: 1em;
+}
+
+.Touch-Container p{
+  font-size: 1.3em;
+  color: #242424;
+  text-align: justify
+}
+
+.Contact-Section-2{
+  display: flex;
+  flex-direction: row;
+  padding:2px;
+  margin-bottom: 2em;
+}
+
+.Reviews-Container{
+  width: 50%;
+}
+
+.Review-Container{
+  list-style:none;
+  padding: 5px;
+  margin-right: 2em;
+}
+
+.Review{
+  font-size: 1.2em;
+  text-align: left;
+  font-family: 'ZillaSlab-light';
+  padding:10px;
+  border-left: solid 2px #ff834a;
+
+}
+
+.Reviewer{
+  font-size:1.3em;
+  text-align: right;
+  line-height:1em
+}
+
+.Item-Container{
+  border-left: solid 1px gainsboro; ;
+  padding : 5px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;;  
+}
+
+
+.Contact-Item{
+display: grid;
+grid-template-columns: 1fr 9fr;
+grid-template-rows: 1fr 1fr;
+padding:0.5em;
+}
+
+
+.Contact-Item p{
+  grid-area: 1/2;
+  font-size: 1.4em;
+  font-family: 'Manrope';
+  text-align: left;
+  margin:auto auto auto 5px;
+  font-weight: 600
+}
+
+.Contact-Item span{
+  grid-area: 2/2;
+  font-size: 1.2em;
+  font-family: 'Manrope';
+  text-align: left;
+  text-decoration: underline;
+  margin:auto auto auto 5px;
+}
+
+.Contact-Item svg{
+  grid-area: 1/1;
+  width: 25px;
+  height:25px;
+  margin: auto;
+  padding-top: 5px;
+}
+
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+
+
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+
+.icon-button:hover .icon-twitter, 
+.icon-button:hover .icon-facebook
+{
+	color: white;
+}
+

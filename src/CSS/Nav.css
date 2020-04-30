@@ -1,0 +1,117 @@
+/* .sidenav---sidenav---_2tBP{
+background-color: gainsboro !important;
+transition-duration: 0.3s !important;
+}
+
+.sidenav---navtext---1AE_f{
+  color: #242424 !important;
+  font-size: 1.5em;;
+  font-family: 'Manrope';
+  font-weight: 700;
+  text-align: right !important;
+  transition: none !important;
+  transition-timing-function: cub
+}
+
+
+#nav-contact{
+  color:#ff834a !important;
+}
+
+
+.sidenav---navicon---3gCRo{
+  width: 2em !important
+}
+
+.sidenav---icon-bar---u1f02 {
+ background-color:   #242424 !important
+}
+
+.sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL {
+background-color: gainsboro !important
+}
+
+
+.NavContainer svg{
+  fill: #24242424 !important;
+  width: 50px;
+  height: 50px;
+  margin:auto;
+  padding: 10px;
+}
+
+
+.NavContainer ul{
+  margin-top: -5em;
+} */
+
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 35px;
+  height: 30px;
+  left: 14px;
+  top: 14px;
+  background-color: #f5f5f5;
+  border:solid 8px #f5f5f5
+}
+
+.bm-burger-bars {
+  background: gainsboro
+}
+
+.bm-burger-bars-hover {
+  background: #f5f5f5;
+}
+
+.bm-burger-bars-hover {
+  background: #242424;
+}
+
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+.bm-cross {
+  background: #242424;
+}
+
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 17% !important
+}
+
+.bm-menu {
+  background: gainsboro;
+  padding: 2em 1em;
+  font-size: 1.15em;
+}
+
+
+
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 1em;
+  margin:auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'manrope';
+  font-weight:700;
+  color: #242424;
+  padding: 10px 0;
+  margin:auto;
+}
+
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

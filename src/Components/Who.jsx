@@ -1,15 +1,29 @@
 import React from 'react';
+import Clients from './Clients';
 
+import '../App.css'
 
 const Who = (props) => {
 
   return (
     <div className='Who' ref={props.props}>
+      <div>
+        <span className='Page-Heading'>Our Client's & Contact's</span>
+        <p>Working predominantly in Manchester and the North West, our skilled tilers have contributed to many prestigious projects for hotels, pubs, restaurants, retail chains and leisure companies and high profile clients such as Salford Cathedral and Media City. </p>
+        <p>Some of our clients include:</p>
+      </div>
 
-      <span className='Page-Heading'>Our Client's & Contact's</span>
-      <p>Working predominantly in Manchester and the North West, our skilled tilers have contributed to many prestigious projects for hotels, pubs, restaurants, retail chains and leisure companies and high profile clients such as Salford Cathedral and Media City. </p>
 
-      <p>Some of our clients include:</p>
+
+
+      <div className='Clients-Carousel'>
+        <Clients />
+      </div>
+
+
+
+
+      {/* 
 
       <div className='LogoStore'>
         <img src={require("../images/1200px-Laing_O'Rourke_logo.svg.png")} />
@@ -35,14 +49,12 @@ const Who = (props) => {
         <img src={require('../images/Ikea_logo.svg')} />
       </div>
 
+      <p> We have ‘preferred supplier’ status for a number of firms across the UK and have retained contracts with these and other companies for many years.</p>
 
-
-      <p>We have ‘preferred supplier’ status for a number of firms across the UK and have retained contracts with these and other companies for many years.</p>
-
-      <div>
+      <div> 
 
       </div>
-
+*/}
     </div >
   );
 }

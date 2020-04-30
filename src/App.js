@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'
 
-import Header from './Components/Header';
+import Jumbo from './Components/Jumbo';
 import Nav from './Components/Nav';
-import About from './Components/About';
-import What from './Components/What';
+import Intro from './Components/Intro';
+import Services from './Components/Services';
 import Who from './Components/Who';
 import Footer from './Components/Footer';
 import Break from './Components/PageBreak';
@@ -26,9 +26,9 @@ class App extends Component {
         <div className='PageContentStore'>
           <div className='Content'>
             <p id='topline' ref={this.state.topRef}> Irlam Wall & Flooring .Ltd</p>
-            <Header props={this.state.homeRef} />
-            <About />
-            <What props={this.state.servRef} />
+            <Jumbo props={this.state.homeRef} />
+            <Intro />
+            <Services props={this.state.servRef} />
             <Break />
             <Who />
             <Contact />

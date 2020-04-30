@@ -1,0 +1,92 @@
+
+.What{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 91%;
+  margin: 6em auto 0 4em;
+}
+
+.What-Words{
+  width: 45%; 
+}
+
+#promise{
+  font-family: 'ZillaSlab-regular';
+  font-weight: 500;
+  font-size: 1.35em;
+  text-align: left;;;
+  line-height: 1.35em;
+  padding: 0 2.5em 0 0 ;
+  margin:auto;
+  color: black;
+  word-spacing: 1px
+}
+
+#commitment{
+margin: 0 0 -15px -10px !important
+}
+
+
+#our-promise{
+  font-size: 1.2em;
+  color: #141414;
+  font-weight: 600
+}
+
+.Services{
+  width: 55%;
+  margin-top:-1em;
+  margin-right: 10px;
+}
+
+.Services ul {
+  list-style: none;
+  margin: -10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  line-height: 3.3em;
+  justify-content: space-between;
+  padding:0;
+}
+
+.Services li{
+  font-family: 'Manrope',sans-serif;
+  font-weight: 800;
+  font-size: 3.3em;
+  color: #949494 ;
+  letter-spacing: -2.5px
+}
+
+#dot{
+  color: gainsboro 
+}
+
+.Services p{
+  font-size: 4.5em;
+  font-weight:800;
+  font-family: 'Manrope';
+  color: gainsboro;
+  margin:auto;
+  color: #f57f4f;
+  line-height: 1.2em;
+  letter-spacing:-1px
+  }
+
+
+#services-footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: -2em;
+}
+
+#name_it{
+  margin-left:-6.5em;
+  padding-bottom: 20px;
+}
+
+#do_it{
+  color: white;
+  margin-left: -1em;
+}
+
